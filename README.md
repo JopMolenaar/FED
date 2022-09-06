@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Jop Molenaar
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Rood, maar blauw voor CSS
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  surface plane maar ik wil responsive ook doen.
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://www.loetje.nl/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Welkom bij Loetje  
+  <img src="readme-images/screencapture-loetje-nl-nl-2022-09-05-15_18_22.png" width="375px" alt="Een lange screenshot van de home pagina van loetje.nl">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Locaties  
+  <img src="readme-images/screencapture-loetje-nl-nl-locaties-2022-09-05-15_20_46.png" width="375px" alt="Een lange screenshot van de locaties pagina van loetje.nl">
  
 </details>
 
