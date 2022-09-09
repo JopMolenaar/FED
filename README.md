@@ -57,30 +57,86 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De taal staat fout in de html.
+  - De screenreader zegt bij de headings alleen banner.
+  - De screenreader zegt sommige teksten wel op de banner en sommige niet.
+  - Bij #delekkerstebiefstuk zijn de foto's een link 
+  - Bij #delekkerstebiefstuk hoor je niet wat de foto is. 
+  - Je komt vast te zitten in de popup met de screenreader.
+  - Met Tab kan je soms niet goed zien waar je bent.(focus)
+  - Bij de menu knopjes kan je helemaal niet zien dat je erop bent met tab.(focus)
+  - Je kan met pijltjes alleen naar boven en beneden maar niet naar andere knopjes of links.
+  - Menu heeft geen hover en sommige links hebben ook geen hover zoals een "lees meer" veranderd niet op de homepagina van een banner maar "menubeurt" veranderd wel.
+  - Kleuren blind gaat gewoon goed.
+  - Er is geen darkmode.
+  - Elastiek om je vingers is geen probleem.
+  - Bril met 2 blokjes: geen probleem.
+  - Bril met vlekken: De toets onder de menukaart button kan je bijna niet lezen. Voor de rest is het geen probleem.
+  - Bril met blur: niks te lezen.
+  - Bril met geel filter: Alles is prima te lezen.
+  - Bril met klein doorkijkpunt: links werden wazig waardoor ik bij de locatie pagina helemaal niks kan lezen. Bij de homepagina: kan headings lezen maar kleine tekst niet. Cadeaukaart en bieftsuk 0.0 kopjes is ook mielijk te zien. FAQ is ook moeilijk te lezen maar de kopjes kan ik wel lezen.
+  - Ballon(concentratie): De welkom bij loetje tekst is een beetje lang.
+  - Parkinson: Je kan alles aanklikken en goed scrollen. Knopjes en links zijn groot genoeg. Bij locaties zijn de locatie's een beetje gevoelig.
+
+
+
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  <!-- - De taal staat fout in de html.
+  - De screenreader zegt bij de headings alleen banner.
+  - De screenreader zegt sommige teksten wel op de banner en sommige niet.
+  - Bij #delekkerstebiefstuk zijn de foto's een link 
+  - Bij #delekkerstebiefstuk hoor je niet wat de foto is. 
+  - Je komt vast te zitten in de popup met de screenreader. -->
+
+- De site kan zeker beter als je een screenreader gebruikt. De taal staat in het engels terwijl de site in het nederlands is en er staan wat alts niet goed.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  
+  - De taal goed zetten in de html, wat alts goed maken -> goede omschrijving. 
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  <!-- - Met Tab kan je soms niet goed zien waar je bent.(focus)
+  - Bij de menu knopjes kan je helemaal niet zien dat je erop bent met tab.(focus)
+  - Je kan met pijltjes alleen naar boven en beneden maar niet naar andere knopjes of links.
+  - Menu heeft geen hover en sommige links hebben ook geen hover zoals een "lees meer" veranderd niet op de homepagina van een banner maar "menubeurt" veranderd wel. -->
+
+- De focus state is niet goed ontworpen of ontbreekt, met de pijltjes kan je niet switchen tussen de linkjes, dit kan alleen met tab en hiermee kan je niet terug. Er ontbreken wat hover states.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  - De focus state bij elk element waar je langs kan komen goed herkenbaar maken. Hover states aanmaken, kijken of je ook met pijltjes tussen linkjes kan switchen.
 
   #### Motoriek (shocks, elastiekjes)
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  <!-- - Elastiek om je vingers is geen probleem.
+  - Ballon(concentratie): De welkom bij loetje tekst is een beetje lang.
+  - Parkinson: Je kan alles aanklikken en goed scrollen. Knopjes en links zijn groot genoeg. Bij locaties zijn de locatie's een beetje gevoelig. -->
+
+- Sommige teksten zijn iets te lang voor mensen met concentratie problemen, en bij de locatie pagina zijn de locatie's een beetje gevoelig. 
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+- te lange teksten inkorten, overflow-x: snap nog iets op de locatie pagina toepassen.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
+  <!-- - Bril met 2 blokjes: geen probleem.
+  - Bril met vlekken: De toets onder de menukaart button kan je bijna niet lezen. Voor de rest is het geen probleem.
+  - Bril met blur: niks te lezen.
+  - Bril met geel filter: Alles is prima te lezen.
+  - Bril met klein doorkijkpunt: links werden wazig waardoor ik bij de locatie pagina helemaal niks kan lezen. Bij de homepagina: kan headings lezen maar kleine tekst niet. Cadeaukaart en bieftsuk 0.0 kopjes is ook mielijk te zien. FAQ is ook moeilijk te lezen maar de kopjes kan ik wel lezen.
+  - Kleuren blind gaat gewoon goed.
+  - Er is geen darkmode. -->
+
+- Er ontbreekt een darkmode, en de brillen met blur, vlekken of kleine doorkijk gaatjes is de kleine tekst niet of erg lastig te lezen. Zeker op de locatie pagina.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+- contrast aansterken?, font size vergroten? 
 </details>
 
 
