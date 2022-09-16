@@ -147,7 +147,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-image/loetjetwee.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/loetjetwee.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/loetje.png" width="375px" alt="breakdown van de hele tweede pagina">
@@ -168,9 +168,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
   De waardes vinden van bepaalde elementen ging goed maar het positioneren vind ik nog erg lastig, zeker omdat diegene die het heeft gemaakt het totaal niet semantisch in orde heeft gemaakt. Dit zorgt ervoor dat ik met minder middelen hetzelfde moet gaan maken. Vooral de navigatie van de header positioneren (hier gaat ook een vraag over) en eht eerste plaatje in de main vind ik lastig nu. Verder gaat het prima.
 
-  <img src="readme-image/headerspacing.png" width="375px" alt="header spacing van loetje zelf">
+  <img src="readme-images/headerspacing.png" width="375px" alt="header spacing van loetje zelf">
 
-  <img src="readme-image/eersteafbmain.png" width="375px" alt="eerste afbeelding in de main van mijn website">
+  <img src="readme-images/eersteafbmain.png" width="375px" alt="eerste afbeelding in de main van mijn website">
 
 
   ### Agenda voor meeting
