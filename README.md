@@ -147,13 +147,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-image/loetjetwee.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/loetje.png" width="375px" alt="breakdown van de hele tweede pagina">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -167,17 +165,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  De waardes vinden van bepaalde elementen ging goed maar het positioneren vind ik nog erg lastig, zeker omdat diegene die het heeft gemaakt het totaal niet semantisch in orde heeft gemaakt. Dit zorgt ervoor dat ik met minder middelen hetzelfde moet gaan maken. Vooral de navigatie van de header positioneren (hier gaat ook een vraag over) en eht eerste plaatje in de main vind ik lastig nu. Verder gaat het prima.
+
+  <img src="readme-image/headerspacing.png" width="375px" alt="header spacing van loetje zelf">
+
+  <img src="readme-image/eersteafbmain.png" width="375px" alt="eerste afbeelding in de main van mijn website">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jop Molenaar   | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+
+Dit wil ik bespreken: 
+Cadeaukaart en bieftsuk 0.0 uit de lijst apart maken. (wrap en spacing met div, mag ik dat doen?)
+Mag ik een section plaatsen in de header om m zo te kunnen centreren als de pagina grooter wordt dan ...px
+Moet ik de header afbeelding als background img zetten ipv een img in de html? (zo wordt ie alleen niet opgenoemd door de screenreader denk ik)
+
+Planning: Eerst alle css, terwijl je de css doet ben je bezig met de responsiveness en daarna ga ik pas extra css toepassen (dark mode, :active, :focus, :hover etc)
 
 
   ### Verslag van meeting

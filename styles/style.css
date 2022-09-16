@@ -204,7 +204,7 @@ main > button{
 }
 
 
-main section:last-of-type{
+main > ul:last-of-type {
     position: fixed;
     right: 0;
     display: flex;
@@ -212,14 +212,15 @@ main section:last-of-type{
     top: calc(50% - 88px );
     height: 176px;
     justify-content: space-between;
-
 }
-main section:last-of-type a{
-        background-color: var(--color-groen);
-        height: 56px;
-        width: 56px;
 
+main > ul:last-of-type li{
+    list-style: none;
+    background-color: var(--color-groen);
+    height: 56px;
+    width: 56px;
 }
+
 
 
 
