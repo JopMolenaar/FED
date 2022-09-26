@@ -23,6 +23,9 @@ button, summary {
     --color-cadeaukaart: #6D4221;
     --color-groen: #5c7a4f;
     --color-text-white: white;
+    --color-hamburgerMenu: rgb(63, 63, 63);
+    --color-shadow: rgba(0, 0, 0, 0.40);
+    --color-vragen: #F7F7F7;
 }
 
 
@@ -45,15 +48,26 @@ body {
 
 }
 
+main{
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    flex-shrink: 0;
+}
 
 
-/****************/
-/* header */
-/****************/
+/****************//****************//****************//****************/
+                                /* header */
+/****************//****************//****************//****************/
 
 body header{
     display: flex;
@@ -62,178 +76,154 @@ body header{
 
     margin: 0;
     padding: 0;
-    height: 120px;
+    height: 7.5em;
     width: 100vw;
-    background-color:var(--color-nav);
-    box-shadow: rgba(0, 0, 0, 0.40) 0px 3px 8px;
-   
 
+    background-color:var(--color-nav);
+    box-shadow: var(--color-shadow) 0px 3px 8px;
+   
     z-index: 999;
     position: fixed;
     top: 0;
-    padding-left: 16px;
-    padding-right: 16px;
-
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-body header img {
-    width: 150px;
-    height: 80px;
 
-}
-
-body header nav {
-    display:flex;
+/* center div */
+body header div {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 120px;
-    width: fit-content;
+    width: 100vw;
+    height: 7.5em;
+}
+
+body header div > button {
     order: -1;
 }
 
-body header nav > button {
-    border: #111 solid 3px;
-    width: 48px;
-    height: 48px;
+
+
+
+body header img {
+    width: 9.375em;
+    height: 2.5em;
 }
 
-
-
-/*  */
-body header nav button span{
-    height: 3px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    border-radius: 10px; 
+/* locaties logo */
+body header div a img {
+    height: 5em;
 }
-/* werkt niet??? */
-
-
-body header nav ul {
-    list-style: none;
-    display: none;
-}
-
 
 body header select {
-    width: 58px;
-    height: 26px;
+    width: 3.625em;
+    height: 1.625;
     border-left: none;
     border-right: none;
     border-top: none;  
-    font-size: 16px;
-   
-}
-
-
-
-
-/****************/
-/* main */
-/****************/
-
-main {
-    position: relative;
-    color: var(--color-text);
-    height: calc(100vh - 120px);
-    margin-top: 120px;
-    background-color: var(--color-background); 
-}
-
-main section:first-of-type{
-    position: relative;
-    /* top: 0; */
-    /* z-index: 1; */
-    height: 360px;
-    width: 100vw;
-
-}
-
-
-main section:first-of-type img{
-    /* border: hotpink solid 5px; */
-    height: 360px;
-    /* width: 100vw; */
-    /* position: absolute; */
-    /* background-repeat: no-repeat; */
-    /* background-position: center center;
-    background-attachment: fixed; */
-    /* background-size: cover; */
-    /* opacity: 0; */
-    /* display: block; */
-    /* width: auto; */
-    /* height: auto; */
-    /* z-index: 2; */
-    /* position: relative;
-    top: -60px; */
-    /* z-index: 1; */
-
-}
-
-main section:first-of-type h2 {
+    font-size: 1em;
+    margin-right: 1.25em;
     z-index: 999;
-
-}
-
-main section:first-of-type a{
-    z-index: 999;
-
 }
 
 
-
-
-
-
-
-main > button{
-    background-color: var(--color-groen);
-    height: 20px;
+body header nav {
+    height: 100vh;
+    width: 15em;
     position: fixed;
-    right: 14px;
-    bottom: 14px;
-    height: 36px;
-    min-width: 64px;
-    padding: 0 16px;
-    border: none;
+    background-color:var(--color-hamburgerMenu);
+    z-index: 1000;
+    transition: 0.3s;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    display: grid; 
+    transform:translateX(-100%);
+
+
+    grid-template-rows: 5em 5.9375em 1fr ;
+    grid-auto-flow: row dense;
+
+}
+
+/* class voor hamburger menu */
+body header.active nav {
+    transform:translateX(0);
+}
+
+
+
+body header nav ul {
+    padding-left: 0;
+}
+
+body header nav ul li a{
+    height:3em;
+    display:block;
+    padding: 1em ;
+    font-size: 1em;
     color: var(--color-text-white);
-    border-radius: 28px;
-    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
-    font-size: .875rem;
-    font-weight: 500;
-    letter-spacing: .0892857143em;
+    font-weight:400; 
 }
 
-
-main > ul:last-of-type {
-    position: fixed;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    top: calc(50% - 88px );
-    height: 176px;
-    justify-content: space-between;
+body header nav ul:nth-of-type(1) {
+    margin-top: 6em;
 }
 
-main > ul:last-of-type li{
-    list-style: none;
-    background-color: var(--color-groen);
-    height: 56px;
-    width: 56px;
+body header nav ul:nth-of-type(2) {
+    margin-top: 7em;
 }
 
 
 
 
 
-/****************/
-/* footer */
-/****************/
+/* hamburger menu button */
+body header div button {
+    z-index: 1888;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    width:2.75em;
+    height:2.75em;
 
-footer {
-    height: 401px;
-    width: 100vw;
-    padding-top:60px;
-    background-color: var(--color-background-footer);
+    appearance: none;
+    border:none;
+    background: none;
+}
+
+button span {
+    position:absolute;
+    width:1.2em;
+    height:.15em;
+    background-color:black;
+    transition-duration:.5s;
+}
+
+body header button span:nth-of-type(1) {
+    transform:translateY(-.4em);
+}  
+
+body header button span:nth-of-type(3) {
+    transform:translateY(.4em);
+}
+  
+body header.active button span:nth-of-type(1) {
+    transform:rotate(45deg) scalex(1.25);
+}
+  
+body header.active button span:nth-of-type(2) {
+    opacity:0;
+}
+  
+body header.active button span:nth-of-type(3) {
+    transform:rotate(-45deg) scalex(1.25);
+}
+  
+body header.active button span {
+    background-color:var(--color-background);
 }
 
 
@@ -245,94 +235,93 @@ footer {
 
 
 
-/****************/
-/* groter dan 960px */
-/****************/
+/****************//****************/
+        /* @Media header */
+/****************//****************/
 
-/* mobile first :) */
 @media (min-width: 960px){
 
+   
 
+    body > header > div > nav {
+
+        align-items: center;
+        height: 7.5em;
+        width: fit-content;
+        transform:translateX(0);
+        background-color: transparent;
+        display: grid;
+        grid-template-rows: 40% 40%;
+        order: 0;
+        padding-top: 1.7em;
+        margin: 2.3125em;
+        margin-top: 3em;
+        position: static;
+    }
     
     body header nav ul {
         display: flex;
-        /* display: block; */
-        /* grid-template: 2 / 8; */
-        /* flex-direction: column; */
+    }
+    body header nav ul:nth-of-type(1) {
+        margin-top: 0;
+    }
+    body header nav ul:nth-of-type(2) {
+        margin-top: 0;
     }
 
-    body header nav > button {
-        display: none;
-    }
-
-    body header nav {
-        order: 0;
-        padding-top: 50px;
-        display: grid;
-    }
-
-  
-
-    body header nav ul a {
+    body header div nav ul a {
+        display: flex;
         color: var(--color-text);
-        font-size: 13px;
-        letter-spacing: .02em;
-        padding: 7px;
-        font-weight: 700;
-        padding: 4.5px 7px;
-        height: 40px;
-        /* flex-wrap: nowrap; */
-    }
-    body header nav ul a:last-of-type{
-        /* padding: 4.5px 19px; */
-        margin-right: 12px;
-    }
+        font-size: 0.8125em;
 
-
-
-    body header nav ul a:nth-of-type(1){
-        /* width: 122.53;
-        height: 24; */
-        /* background-color: var(--color-groen); */
-        margin: 8px 10px 8px 0;
-    }
-
-    body header nav ul a:nth-of-type(2){
-        /* width: 122.53;
-        height: 24; */
-        background-color: var(--color-groen);
-        margin: 8px 10px 8px 0;
+        letter-spacing: 0.001625em;
+        padding-left: 0.4375em;
   
+        padding-right: 0.4375em;
+        font-weight: 700;
+       
+        height: 2.5em;
+        text-transform: uppercase;
+        
+
     }
+
+    body header div nav ul:nth-of-type(1) li:nth-of-type(1) a{
+        background-color: var(--color-cadeaukaart);
+        margin-right: 1em;
+        margin-left: 0.4em;
+        height:fit-content;
+        color: var(--color-text-white);
+        padding:0.3125em;
+    }
+
+    body header div nav ul:nth-of-type(1) li:nth-of-type(2) a{
+        
+        background-color: var(--color-groen);
+        color: var(--color-text-white);
+        padding:0.3125em;
+        margin-right: 1em;
+        margin-left: 0.4em;
+        height:fit-content;
+    }
+
+
 
     body header select {
         position: absolute; 
-        top:28px;
-        right: 28px;
-        margin-bottom: 90px;
+        top:1.4375em;
+        right: 1.875em;
+        margin-bottom: 5.625em;
     }
-
 
     body header img {
 
-        padding-left: 12px;
+        padding-left: 0.75em;
     }
 
-}
-
-
-
-
-
-/* header afbeelding wordt groter */
-@media (min-width: 778px) {
-
-}
-
-
-/* header afbeelding wordt groter */
-@media (min-width: 1024px) {
-
+    body header div button {
+        display: none;
+    }
 }
 
 
@@ -340,6 +329,23 @@ footer {
 
 /* max width, komt alleen nog ruimte naast */
 @media (min-width: 1172px) {
+    body header {
+        display: flex;
+        justify-content: center;
+    }
+    
+    body header div {
+        max-width: 1172px;
+    }
+
+    div {
+        position: relative;
+    }
+
+    body header select {
+        right: 1em;
+    }
+
 
 }
 
@@ -349,10 +355,821 @@ footer {
 
 
 
-/* vragen over
-codeaukaart en bieftsuk 0.0
-mag ik een section plaatsen in de header om m zo te kunnen centreren
-Moet ik de header afbeelding als background img zetten ipv een img in de html (zo wordt ie alleen niet opgenoemd door de screenreader denk ik?
+
+
+
+
+/****************//****************//****************//****************/
+                                /* main */
+/****************//****************//****************//****************/
+
+main {
+    position: relative;
+    color: var(--color-text);
+    margin-top: 7.5em;
+    background-color: var(--color-background); 
+    display: grid;
+}
+
+/* main section:first-of-type{
+    position: relative;
+    height: 22.5em;
+    width: 100%;
+}
+
+main section:first-of-type img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section:first-of-type h2 {
+    z-index: 4;
+    position: absolute;
+    bottom: 45%;
+    left:5%;
+    font-size: 1.3125em;
+    font-weight: 700;
+    background-color:var(--color-background);
+    padding: 0.5em;
+}
+
+main section:first-of-type a{
+    position: absolute; 
+    bottom:calc(45% - 3em);
+    left:5%;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--color-text-white);
+    background-color: var(--color-groen);
+    padding: 0.8em 1.2em;
+} */
+
+
+
+/* carousel */
+@keyframes tonext {
+    75% {
+      margin-left: 0;
+    }
+    95% {
+      margin-left: -100%;
+    }
+    98% {
+      margin-left: -100%;
+    }
+    99% {
+      margin-left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      margin-left: 0;
+    }
+    95% {
+      margin-left: 300%;
+    }
+    98% {
+      margin-left: 300%;
+    }
+    99% {
+      margin-left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+
+  
+  main section:nth-of-type(1) ul:nth-of-type(1),   section:nth-of-type(1) ul:nth-of-type(1) li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+
+  /* main section:nth-of-type(2) ul:last-child {
+      margin-bottom: 1.5em;
+  } */
+  
+  main section:nth-of-type(1) {
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    position: relative;
+    height: 22.5em;
+    width: 100%;
+   
+  
+  
+  
+  }
+  
+
+ 
+
+
+main section:nth-of-type(1) ul li div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main section:nth-of-type(1) h2 {
+    z-index: 4;
+    position: absolute;
+    bottom: 45%;
+    left:5%;
+    font-size: 1.3125em;
+    font-weight: 700;
+    background-color:var(--color-background);
+    padding: 0.5em;
+}
+
+main section:nth-of-type(1) a{
+    position: absolute; 
+    bottom:calc(45% - 3em);
+    left:5%;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--color-text-white);
+    background-color: var(--color-groen);
+    padding: 0.8em 1.2em;
+}
+
+main section:nth-of-type(1) ul li:nth-of-type(1) div a {
+    font-size: 0.875em;
+}
+
+/* main section:nth-of-type(1) li:nth-of-type(1){
+    z-index: 80;
+}
+main section:nth-of-type(1) li:nth-of-type(2){
+    z-index: 81;
+}
+main section:nth-of-type(1) li:nth-of-type(3){
+    z-index: 82;
+}
+main section:nth-of-type(1) li:nth-of-type(4){
+    z-index: 83;
+} */
+
+
+
+
+
+
+  main section:nth-of-type(1) ul:nth-of-type(1) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0; 
+    height: 360px;
+    display: flex;
+    overflow-x: scroll;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+/* Hide scrollbar for Chrome, Safari and Opera */
+main section:nth-of-type(1) ul:nth-of-type(1)::-webkit-scrollbar {
+    display: none;
+ }
+
+  main section:nth-of-type(1) ul:nth-of-type(1) li{
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item;
+  }
+  
+ 
+
+   main section:nth-of-type(1) ul:nth-of-type(1) li div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    scroll-snap-align: center;
+    overflow-y: hidden;
+  }
+
+
+
+
+
+/* animatie ofzo */
+    main section:nth-of-type(1) ul:nth-of-type(1) li div {
+      animation-name: tonext, snap;
+      animation-timing-function: ease;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+  
+    main section:nth-of-type(1) ul:nth-of-type(1) li:last-child {
+      animation-name: tostart, snap;
+    }
+/*   
+  
+  @media (prefers-reduced-motion: reduce) {
+    main section:nth-of-type(1) ul:nth-of-type(1) li div  {
+      animation-name: none;
+    }
+  }
+  
+  main section:nth-of-type(1):hover ul:nth-of-type(1) li div,
+  main section:nth-of-type(1):focus-within ul li div {
+    animation-name: none;
+  }
+   */
+
+
+
+
+
+/* links onder de foto's */
+
+  /* main section:nth-of-type(2) ul:nth-of-type(2) {
+    border: #111 solid 5px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  main section:nth-of-type(2) aside ul:nth-of-type(2),
+  main section:nth-of-type(2) aside ul:nth-of-type(2) li {
+    display: inline-block;
+  }
+  
+  main section:nth-of-type(2) aside ul:nth-of-type(2) li a {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #333;
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  } */
+
+  /* eind carrousel */
+
+
+
+
+
+/* reserveren */
+main > button{
+    background-color: var(--color-groen);
+    height: 1.25em;
+    position: fixed;
+    right: 0.875em;
+    bottom: 0.875em;
+    height: 2.25em;
+    min-width: 4em;
+    padding: 0 1em;
+    border: none;
+    color: var(--color-text-white);
+    border-radius: 1.75em;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    font-size: .875rem;
+    font-weight: 200;
+    letter-spacing: .0892857143em;
+    text-transform: uppercase;
+}
+
+
+/* socials */
+main > ul:last-of-type {
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    top: calc(50% - 5.5em );
+    height: 11em;
+    justify-content: space-between;
+}
+
+main > ul:last-of-type li{
+    list-style: none;
+    background-color: var(--color-groen);
+    height: 3.5em;
+    width: 3.5em;
+}
+
+main > ul:last-of-type li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.5em;
+}
+
+main > ul:last-of-type li a svg {
+    fill: var(--color-nav);
+}
+
+
+
+/* 2 eerste tekstjes */
+main section:nth-of-type(2){
+    margin-top:3.6em;
+    gap: 8%;
+    
+}
+main section:nth-of-type(2) article:nth-of-type(1) {
+
+    padding: 0.9375em;
+    
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) p a {
+    color: var(--color-groen);
+    text-decoration: underline;
+}
+
+main section:nth-of-type(2) article:nth-of-type(1) h2, 
+main section:nth-of-type(2) article:nth-of-type(1) p, 
+main section:nth-of-type(2) article:nth-of-type(2) h2, 
+main section:nth-of-type(2) article:nth-of-type(2) p {
+    line-height: 1.5em;
+}
+
+main section:nth-of-type(2) article:nth-of-type(2) {
+    padding: 0.9375em;
+}
+
+
+
+/* de tekstjes in de het "laatste van loetje"  */
+main section:nth-of-type(3) {
+    margin-top: 3.6em;
+}
+main section:nth-of-type(3) h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+main section:nth-of-type(3) ul{
+    margin-left: 2.1875em;
+    margin-right: 2.1875em;
+    display: grid;
+    align-items: center;
+    padding: 0;
+    
+}
+main section:nth-of-type(3) ul li{
+    margin-bottom: 1.5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+main section:nth-of-type(3) ul li article {
+    margin-top: 0;
+    display: grid;
+    padding: 0;
+}
+
+main section:nth-of-type(3) ul li article img {
+    order: -1;
+    width: 100%;
+}
+
+main section:nth-of-type(3) ul li article h2 {
+    margin: 0;
+    padding-top: 0.75em;
+    padding-bottom: 0.5em;
+    text-align: start;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    font-size: 1.25em;
+    word-break: break-all;
+}
+
+main section:nth-of-type(3) ul li article p{
+    margin: 0;
+    font-size: 0.875em;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-bottom: 0.75em;
+    line-height: 1.375em;
+    letter-spacing: .0071428571em;
+    font-weight: 400;
+}
+
+
+
+/* Meest gestelde vragen */
+main section:nth-of-type(4) {
+    margin-top: 3.6em;
+
+}
+main section:nth-of-type(4) h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+/* de vragen */
+main section:nth-of-type(4) details {
+    display: flex;
+    width: calc(100vw - 1.875em);
+    max-width: 1116px;
+    padding: 1.25em 1.5625em;
+    text-align: start;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.5em;
+    color: var(--color-cadeaukaart);
+    border: none;
+    background-color: var(--color-vragen);
+    margin-bottom: 0.625em;
+    margin-left: 0.9375em;
+}
+
+main section:nth-of-type(4) details:nth-of-type(2) {
+    margin-bottom: 5em;
+}
+
+main section:nth-of-type(4) summary {
+    font-weight: bold;
+    margin: 0;
+    padding: 0.5em;
+    margin-left: 1em;
+    list-style-type: "+  ";
+    list-style-position: outside;
+}
+
+
+main section:nth-of-type(4) details[open] p {
+    padding: 0.5em;
+    font-weight: 400;
+    margin: 0;
+}
+
+main section:nth-of-type(4) details[open] a {
+    color: var(--color-groen);
+    text-decoration: underline;
+}
+
+main section:nth-of-type(4) details[open] summary {
+    border-bottom: none;
+    list-style-type: "-  ";
+}
+
+
+
+
+
+
+
+/****************//****************/
+        /* @Media Main */
+/****************//****************/
+
+/* bovenste afbeelding wordt groter */
+@media (min-width: 600px){
+
+    main section:nth-of-type(3) ul  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5em;
+
+    }
+
+    main section:nth-of-type(2) ul li {
+        margin-bottom: 0;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    main section:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-self: center;
+    }
+}
+
+
+@media (min-width: 778px) {
+
+
+    main section:nth-of-type(1), main section:nth-of-type(1) ul:nth-of-type(1) {
+        height: 28.125em;
+    }
+
+    main section:first-of-type h2 {
+        left:50%; 
+    }
+    
+    main section:first-of-type a{
+        left:50%;
+    }
+}
+
+@media (min-width: 960px){
+
+}
+
+/* header afbeelding wordt groter */
+@media (min-width: 1024px) {
+    main section:nth-of-type(1), main section:nth-of-type(1) ul:nth-of-type(1) {
+        height: 34.375em;
+        }
+}
+
+/* max width, komt alleen nog ruimte naast */
+@media (min-width: 1172px) {
+    main {
+        display: grid;
+    }
+
+    main section:nth-of-type(2), main section:nth-of-type(3), main section:nth-of-type(4)  {
+        max-width: 1172px;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    
+}
+
+
+/****************//****************//****************//****************/
+                                /* Main Locaties */
+/****************//****************//****************//****************/
+
+
+
+
+
+#locaties main > h2 {
+
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 36px;
+}
+#locaties main select {
+    width: 280px;
+    height: 48px;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 6em;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+#locaties main > section {
+    order: -1;
+    display: flex;
+    position: static;
+    /* align-self: ; */
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    height: 535px;
+}
+#locaties main > section ul li {
+    /* height: 100px; */
+    width: 100%;
+ 
+    padding: 1em;
+    border-bottom: rgb(172, 172, 172) solid 0.5px;
+    
+    color: black;
+}
+
+
+#locaties main > section ul li h2 {
+    background-color: transparent;
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+
+}
+
+#locaties main > section ul li p {
+    margin: 0;
+    font-size: 14px;
+    color: grey;
+    line-height: 1.5em
+
+}
+
+#locaties main h2 {
+    
+    position: static;
+
+
+}
+
+
+#locaties main section iframe {
+    display: none;
+}
+
+
+#locaties main section ul{
+    
+    display: block;
+    position: static;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/****************//****************//****************//****************/
+                                /* @media Main Locaties */
+/****************//****************//****************//****************/
+
+@media (min-width:960px){
+    #locaties main section iframe {
+        display: block;
+        height: 500px;
+        width: 584px;
+    }
+
+    #locaties main > section {
+        
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+
+        margin-top: 4em;
+
+        align-content: center;
+        
+    }
+
+    #locaties main section ul{
+        padding-right: 1em;
+        margin-top: 0;
+        height: 93%;
+        width: fit-content;
+        padding: 0;
+    }
+}
+
+@media (min-width:1264px){
+    #locaties main section iframe {
+            height: 500px;
+            width: 774px;
+            
+        
+    }
+
+    #locaties main > section {
+        
+        width: 1185px;
+        display: flex;
+        
+        
+    }
+
+    #locaties main section ul {
+        width: 31%;
+    }
+}
+
+
+
+/****************//****************//****************//****************/
+                                /* Footer */
+/****************//****************//****************//****************/
+
+footer {
+    /* height: 25.0625em; */
+    width: 100vw;
+    padding-top:3.75em;
+    background-color: var(--color-background-footer);
+    display: grid;
+    align-items: center;
+    grid-template-rows: fit-content fit-content;
+}
+
+
+footer section:nth-of-type(1) {
+    padding-top: 0;
+    max-width: 1172px;
+    align-self: left;
+    width: fit-content;
+    width: calc(100vw - 30px);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+footer section h2{
+    text-decoration: underline;
+    margin: 0;
+    font-size: 1em;
+    padding-left: 10%;
+}
+
+footer section ul {    
+    padding-left: 10%;
+    margin-bottom: 4em;
+}
+
+footer section ul li a{
+    line-height: 1.5;
+    text-decoration: underline;
+    color: var(--color-cadeaukaart);
+}
+footer section:nth-of-type(2) {
+    display: grid;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    
+        
+}
+
+
+footer section p {
+    order: 1;
+    text-align: center;
+    margin-bottom: 1em;
+    font-weight: 300;
+    font-size: 15px;
+}
+footer section p a {
+    color: var(--color-groen);
+    text-decoration: underline;
+}
+
+
+footer section img {
+    height: 74px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+
+}
+
+/****************//****************/
+        /* @Media Footer */
+/****************//****************/
+
+@media (min-width: 960px) {
+    footer section:nth-of-type(2){
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+/* wat kan ik doen ipv die div's in de carousel?
+
+Hoe kan die mooi sliden en blijven op de volgende foto?
+
+shadow weg bij de map
+
+
+titel <br>?????
+
+plusjes voldoende?
+
+map goed of moet ik er ook buttons op doen?
+
 */
 
 
@@ -363,74 +1180,4 @@ Moet ik de header afbeelding als background img zetten ipv een img in de html (z
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* navigatie hamburger menu, deels gekopieerd van Bron: https://www.youtube.com/watch?v=At4B7A4GOPg&list=WL&index=3 */
-/* nav a:nth-of-type(1) {
-    position: absolute;
-    top: 1.5rem;
-    right: 2rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-} */
-
-
-
-/* @media (max-width: 000px) {
-    nav a:nth-of-type(1) {
-        display: flex;
-    }
-
-    nav {
-        display: none;
-        width: 100%;
-    }
-
-    header{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
-
-    nav li{
-        text-align: center;
-    }
-
-    .active {
-        display: flex;
-    }
-} */
-/* Eind hamburger navigatie menu */
 

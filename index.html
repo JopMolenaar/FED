@@ -7,144 +7,211 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<title>Loetje.nl</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap" rel="stylesheet">
 	
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body id="home">
+<body >
 
 	<header>
-		<h1><img src="images/logo.svg" alt="Het logo van Loetje"></h1>
+		<div>
+			<h1><img src="images/logo.svg" alt="Het logo van Loetje"></h1>
 		
-
-
-		<nav>
-			<button href="#">
+			<button>
 				<span></span>
 				<span></span>
 				<span></span>
-			</button>
-			<ul>
-<!-- hoofdletters worden volgensmij niet lekker voorgelezen door de screenreader -->
-				<li><a href="#">CADEAUKAART</a></li>	
-				<li><a href="#">BIEFSTUK 0.0</a></li>
-				<li><a href="#">MENUKAART</a></li>
-				<li><a href="locaties.html">LOCATIES</a></li>
-				<li><a href="#">VERHALEN</a></li>
-				<li><a href="#">GROEPEN</a></li>
-				<li><a href="#">OVER LOETJE</a></li>
-				<li><a href="#">CONTACT</a></li>
-				<li><a href="#">WERKENBIJ</a></li>
-			</ul>
-		</nav>
+			</button> 
 
-		<!-- <Label for="taal">Taal</Label> -->
-		<!-- of is dit een button -->
-		<select name="Taal" id="taal">
-            <option value="">NL</option>
-            <option value="">EN</option>
-        </select>
+			<nav>
+				<ul>
+					<li><a href="#">Cadeaukaart</a></li>	
+					<li><a href="#">Biefstuk 0.0</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Menukaart</a></li>
+					<li><a href="locaties.html">Locaties</a></li>
+					<li><a href="#">Verhalen</a></li>
+					<li><a href="#">Groepen</a></li>
+					<li><a href="#">Over Loetje</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Werkenbij</a></li>
+				</ul>
+			</nav>
 
+			
+			<select name="Taal" id="taal">
+				<option value="" aria-label="Nederlands">NL</option>
+				<option value="" aria-label="Engels" >EN</option>
+			</select>
+		</div>
 	</header>
 
 	<main>
-		<section>
-			<h2>Hoera! Loetje bestaat 45 jaar</h2>
-			<a href="#">Lees meer</a>
-			<img src="images/loetjebiefstuk.png" alt="Een foto van een ober die iemand helpt door de ramen van loetje.">
-		</section>
 
-		<article>
-			<h2>Wij hebben lekker nieuws: Loetjes Biefstuk Bali 0.0</h2>
-			<p>Je kon er de afgelopen maanden bijna niet omheen; de 
-				lancering van onze nieuwste, plantaardige, biefstuk. 
-				En we hebben goed nieuws! Sinds 18 augustus is het aantal
-				 locaties waar we onze Biefstuk Bali 0.0 serveren verder 
-				 uitgebreid. <a href="">Lees verder</a></p>
-		</article>
+		
 
-		<section>
-			<h2>Het laatste van Loetje</h2>
+		<section aria-label="Gallery">
 			<ul>
-				<li>
-					<article>
-						<h2>Loetje is 45 jaar</h2>
-						<img src="" alt="Een afbeelding met de L van loetje en 45 erop.">
-						<p>Het is een bijzonder jaar. Waarom? Dit jaar is het 45 jaar 
-							geleden dat Ludwig Klinkhamer zijn biljartcafé Loetje begon 
-							aan de Johannes Vermeerstraat. Een bescheiden begin, wat 
-							uiteindelijk is uitgegroeid tot restaurants door heel 
-							Nederland! Wij vinden dit een mooi moment om terug te kijken 
-							op de afgelopen jaren. In deze video werpen we [...]</p>
-					</article>
-				</li>
-				<li>
-					<article>
-						<h2>30e Loetje geopend in Reeuwijk</h2>
-						<img src="" alt="Een afbeelding met de L van loetje en 45 erop.">
-						<p>Vanaf nu kun je ook in Reeuwijk bij Loetje terecht. Ons 
-							splinternieuwe restaurant is gevestigd aan Elfhoeven, één 
-							van de mooie Reeuwijkse Plassen. En we kunnen het zelf 
-							bijna niet geloven, maar dit is alweer onze 30e locatie! 
-							Dankzij de prachtige ligging, is ook Reeuwijk de perfecte 
-							plek voor lunch, borrel en diner, zowel in [...]</p>
-					</article>
-				</li>
+			  <li tabindex="0" id="slide1">
+				<div>
+					<h2>Nieuw: Loetjes Bieftsuk Bali 0.0</h2>
+					<a href="#" aria-label="Loetjes Bieftsuk Bali 0.0 beschikbaar bij deze 15 locaties">Beschikbaar bij deze 15 locaties</a>
+					<img src="images/loetjebiefstuk.png" alt="Een foto van een gesneden Loetje biefstuk aan een vork.">
+				</div>
+			  </li>
+			  
+			  <li tabindex="0" id="slide2">
+				<div>
+					<h2>Hoera! Loetje bestaat 45 jaar</h2>
+					<a href="#" aria-label="Lees meer over het 45 jarige bestaan van Loetje">Lees meer</a>
+					<img src="images/hoera45.png" alt="Een foto van een biefstuk van loetje met loetje's logo wazig op de achtergrond.">
+				</div>
+			  </li>
+
+			  <li tabindex="0" id="slide3">
+				<div>
+					<h2>Reserveer nu een tafel in ons restaurant!</h2>
+					<a href="#" >Reserveren</a>
+					<img src="images/reserveerbijloetje.jpeg" alt="Een foto van drie mensen die gezellig aan het eten zijn bij Loetje.">
+				</div>
+			  </li>
+
+			  <li tabindex="0" id="slide4">
+				<div>
+					<h2>Kom werken voor Loetje!</h2>
+					<a href="#" aria-label="Solliciteer bij Loetje">Solliciteer direct!</a>
+					<img src="images/werkenbijloetje.jpg" alt="Een foto van een serveerster van Loetje.">
+				</div>
+			  </li>
 			</ul>
-		</section>
 
-		<section>
-			<h2>Meest gestelde vragen aan ons...</h2>
+				<!-- <ul>
+					<li>
+						<button href="#slide1"></button>
+					</li>
+					<li>
+						<button href="#slide2"></button>
+					</li>
+					<li>
+						<button href="#slide3"></button>
+					</li>
+					<li>
+						<button href="#slide4"></button>
+					</li>
+			  	</ul> -->
+		  </section>
 
-			<ul>
-				<li>
-					<button>Ik wil reserveren, waar kan ik dat doen? <img src="" alt="Een plus om aan te geven dat u deze vraag kunt uitklappen."> </button>
-				</li>
-				<li>
-					<button>Ik wil reserveren op het terras, kan dat? <img src="" alt="Een plus om aan te geven dat u deze vraag kunt uitklappen."> </button>
-				</li>
-			</ul>
-		</section>
 
+			<section>
+				<article>
+					<h2>Wij hebben lekker nieuws: Loetjes Biefstuk Bali 0.0</h2>
+					<p>Je kon er de afgelopen maanden bijna niet omheen; de 
+						lancering van onze nieuwste, plantaardige, biefstuk. 
+						En we hebben goed nieuws! Sinds 18 augustus is het aantal
+						locaties waar we onze Biefstuk Bali 0.0 serveren verder 
+						uitgebreid. <a href="#" aria-label="Lees verder over Loetjes Biefstuk Bali 0.0">Lees verder</a></p>
+				</article>
 
-		<!-- socials menu aan de kant (vast) -->
+				<article>
+					<h2>Welkom bij Loetje!</h2>
+					<p>De lekkerste biefstuk en nog veel meer heerlijke gerechten 
+						eet je bij Loetje. Onze ruime porties worden altijd 
+						geserveerd met een flinke dosis gastvrijheid. 
+						Bij Loetje is het goed en zit je altijd lekker. 
+						We zijn blij je weer te mogen ontvangen. Maak 
+						alvast online je reservering of loop spontaan 
+						bij ons binnen en schuif gezellig aan!.</p>
+				</article>
+			</section>
+			<section>
+				<h2>Het laatste van Loetje</h2>
+				<ul>
+					<li>
+						<article>
+							<h2>Loetje is 45 jaar</h2>
+							<img src="images/loetje45.png" alt="Een afbeelding met de L van loetje en 45 erop.">
+							<p>Het is een bijzonder jaar. Waarom? Dit jaar is het 45 jaar 
+								geleden dat Ludwig Klinkhamer zijn biljartcafé Loetje begon 
+								aan de Johannes Vermeerstraat. Een bescheiden begin, wat 
+								uiteindelijk is uitgegroeid tot restaurants door heel 
+								Nederland! Wij vinden dit een mooi moment om terug te kijken 
+								op de afgelopen jaren. In deze video werpen we [...]</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<h2>30e Loetje geopend in Reeuwijk</h2>
+							<img src="images/nieuweloetje.png" alt="Een foto van ons nieuwe restaurant in Reeuwijk. ">
+							<p>Vanaf nu kun je ook in Reeuwijk bij Loetje terecht. Ons 
+								splinternieuwe restaurant is gevestigd aan Elfhoeven, één 
+								van de mooie Reeuwijkse Plassen. En we kunnen het zelf 
+								bijna niet geloven, maar dit is alweer onze 30e locatie! 
+								Dankzij de prachtige ligging, is ook Reeuwijk de perfecte 
+								plek voor lunch, borrel en diner, zowel in [...]</p>
+						</article>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Meest gestelde vragen aan ons...</h2>
+
+			
+				<details>
+					<summary>Ik wil reserveren, waar kan ik dat doen?</summary>
+					<p>Je kunt heel makkelijk op onze website reserveren <a href="">www.loetje.nl/reserveren.</a></p>
+				</details>
+				<details>
+					<summary>Ik wil reserveren op het terras, kan dat?</summary>
+					<p>Plaats nemen op het terras kan in overleg met onze collega’s in het filiaal, een reservering is niet mogelijk.</p>
+				</details>
+			</section>
+
 		<ul>
-			<li><a href="#"><img src="" alt="Facebook logo"></a></li>
-			<li><a href="#"><img src="" alt="Instagram logo"></a></li>
-			<li><a href="#"><img src="" alt="Linkedin logo"></a></li>
+			<li><a href="#" aria-label="Link naar de Facebook pagina van Loetje"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg" style="font-size: 36px; height: 36px; width: 36px;"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"></path></svg></a></li>
+			<li><a href="#" aria-label="Link naar de Instagram pagina van Loetje"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg" style="font-size: 36px; height: 36px; width: 36px;"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path></svg></a></li>
+			<li><a href="#" aria-label="Link naar de Linkedin pagina van Loetje"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" role="img" aria-hidden="true" class="v-icon__svg" style="font-size: 36px; height: 36px; width: 36px;"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z"></path></svg></a></li>
 		</ul>
 		
-		<!-- reserveren button onderaan de pagina (vast) -->
 		<button>Reserveren</button>
+		
 	</main>
 
 	<footer>
+		
+			<section>
+				<h2>Informatie</h2>
+				<ul>
+					<li><a href="#">Menukaart</a></li>
+					<li><a href="locaties.html">Locaties</a></li>
+					<li><a href="#">Het laatste van Loetje</a></li>
+				</ul>
+			</section>
 
-		<section>
-			<h2>Informatie</h2>
-			<ul>
-				<li><a href="#">Menukaart</a></li>
-				<li><a href="locaties.html">Locaties</a></li>
-				<li><a href="#">Het laatste van Loetje</a></li>
-			</ul>
-		</section>
-
-		<section>
-			<p>© 2022 In beheer van Restaurant Company Europe - 
-				<a href="#">RCE.EU</a> - 
-				<a href="#">Privacyverklaring</a> - 
-				<a href="#">Disclaimer</a>
-			</p>
-			<img src="" alt="Restauramt company Europe logo">
-		</section>
-
+			<section>
+				<p>© 2022 In beheer van Restaurant Company Europe - 
+					<a href="#">RCE.EU</a> - 
+					<a href="#">Privacyverklaring</a> - 
+					<a href="#">Disclaimer</a>
+				</p>
+				<img src="images/rce-logo-dark.5dd637d6.svg" alt="Restauramt company Europe logo">
+			</section>
+	
 	</footer>
 
 
 
 
 	<script defer src="scripts/script.js"></script>
+		<!-- als je de pagina opent dan begint de computer nog met het uitvoeren van de javascript voordat de hele html gelade is.  -->
 </body>
 	
 </html>
+
+<!-- div is om de content te centreren, goedgekeurd dor Sanne  -->

@@ -176,28 +176,39 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Jop Molenaar   | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Jop Molenaar   | Nina               | Liam          | Tijme        |
+  | ---            | ---                | ---          | ---           |
+  | dit bespreken  | en dit             | Niet aanwezig| Niet aanwezig |
+  | en dat ook nog | dit als er tijd is |      .       | .             |
+  | ...            | ...                | ...          | ...           |
 
-
-Dit wil ik bespreken: 
-Cadeaukaart en bieftsuk 0.0 uit de lijst apart maken. (wrap en spacing met div, mag ik dat doen?)
-Mag ik een section plaatsen in de header om m zo te kunnen centreren als de pagina grooter wordt dan ...px
-Moet ik de header afbeelding als background img zetten ipv een img in de html? (zo wordt ie alleen niet opgenoemd door de screenreader denk ik)
+Jop wil ik bespreken: 
+- Cadeaukaart en bieftsuk 0.0 uit de lijst apart maken. (wrap en spacing met div, mag ik dat doen?)
+- Mag ik een section plaatsen in de header om m zo te kunnen centreren als de pagina grooter wordt dan ...px
+- Moet ik de header afbeelding als background img zetten ipv een img in de html? (zo wordt ie alleen niet opgenoemd door de screenreader denk ik)
 
 Planning: Eerst alle css, terwijl je de css doet ben je bezig met de responsiveness en daarna ga ik pas extra css toepassen (dark mode, :active, :focus, :hover etc)
+
+
+
+Nina wil dit bespreken:
+Vraag week 2 (vorige week) Vraag? Hoe maak ik de achtergrond van mijn buttons transparent (omdat het foto's zijn in bepaalde vormen  
+
+Antwoord: (HULP JOP) Zet de foto' als linkjes i.p.v buttons hierdoor wordt je achtergrond wel transparent.
+
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - 2 aparte ul's gebruiken
+  - 1 div mag ik gebruiken om zo de header te centreren.
+  - position:absolute en verder nog wat dingen waardoor die nu goed staat.
+  
+  nog wat extra punten: 
+  - Het font is hetzelfde nu
+  - ik mag geen px gebruiken
+  
 
 </details>
 
@@ -217,22 +228,55 @@ Planning: Eerst alle css, terwijl je de css doet ben je bezig met de responsiven
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jop     | Nina         | Liam    | Tijme       |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
+Jop wil dit bespreken: 
+- De ene li is groter dan de ander als het grid komt in de main, hoe komt dat en hoe fix ik dit?
+- Hoe zou ik de vragen buttons kunnen laten uitlklappen?
+- Het kopje in de header bestaat uit 2 delen op de echte site. Mag ik dit laten of???
+- Hoe kom ik aan de iconen van de socials?
+- Moet ik die 5 verschillende foto's bovenaan in de main ook doen?
+
+
+
+Nina wil dit bespreken: 
+- Vraag 1: Logo staat nu heel raar geplaatst in mijn html, is hier een handigere manier voor?
+
+- Vraag 2: Hoe zet ik uit dat het over elkaar gaat als ik het groter maak? ik heb width: VW gedaan en dat betekent dat het groot word als ik het groter maak en dat moet maar het moet niet over elkaar.
+
+- Vraag 3: Ik loop vast met de achtergrond omdat dat allemaal met css is gedaan, hoe maak ik hier een begin mee?
+
+- Vraag 4: Hoe geef ik een img/link een hover effect? 
+
+
+Liam wil dit bespreken:
+
+
+
+Tijme wil dit bespreken:
+
+- Mag dit: < li >< a >< img >content< img >< a >< li >?
+- Ga ik de goeie kant op met mijn radiobuttons?
+- 3 verschillende labels?
+- is er een manier om je hele site in 1 keer in het midden uit te lijnen?
+- custom font: wat doe ik fout?????????
+- is het mogelijk om de more knop naar rechts te flexen??
+
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+- 100% height en margin-bottom = 0
+- met  < details >
+- verder vragen aan Sanne.
+- de svg uit de html van loetje kopieren
+- ja met en foto carrousel met snap type iets, en mss linkjes dat je naar die foto's kan gaan
 
-</details>
+
 
 
 

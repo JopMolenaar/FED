@@ -2,11 +2,23 @@
 console.log("hi");
 
 
-const toggleButton = document.querySelector('nav a:nth-of-type(1)');
-const section = document.querySelector('nav');
-// const toggleButton = document.getElementsByClassName('toggle-button')[0]
-// const section = document.getElementsByClassName('navigatie')[0]
+const openButton = document.querySelector('header div > button');
+const deHeader = document.querySelector('header');
+const ul = document.querySelector('body header nav ul');
+const loetjeimg = document.querySelector("body header img");
 
-toggleButton.addEventListener('click', () => {
-    section.classList.toggle('active')
-})
+
+
+
+
+openButton.addEventListener("click", () => {
+    deHeader.classList.toggle("active")
+    console.log("hamburger menu");
+});
+
+
+
+
+
+
+
