@@ -18,6 +18,20 @@ openButton.addEventListener("click", () => {
 
 
 
+const carousel = document.querySelector('main a');
+
+if (carousel === document.activeElement) {
+    console.log('Element has focus!');
+} else {
+    console.log(`Element is not focused.`);
+}
+
+
+
+
+
+
+
 
 
 

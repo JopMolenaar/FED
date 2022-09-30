@@ -1,0 +1,176 @@
+
+
+/* locaties logo */
+body header div a img {
+    height: 5em;
+    transition: 0.3s;
+}
+body header div a img:hover {
+    transform: translateY(-3px);
+}
+ body header div a img:active {
+     transform: translateY(3px);
+}
+
+
+
+/****************//****************/
+            /* Main */
+/****************//****************/
+
+
+main > h2 {
+
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 36px;
+}
+
+ main select {
+    width: 280px;
+    height: 48px;
+    align-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 6em;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+main select:focus {
+    animation-name: bounceee; 
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+main select:hover {
+    background-color: var(--color-hover-select);
+}
+
+
+
+ main > section {
+    order: -1;
+    display: flex;
+    position: static;
+    padding-left: 2em;
+    padding-right: 2em;
+    width: 100%;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    height: 535px;
+}
+
+main section ul{
+    display: block;
+    position: static;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+}
+
+main > section ul li {
+    width: 100%;
+
+    border-bottom: rgb(172, 172, 172) solid 0.5px;
+    color: black;
+    transition: 0.2s;
+}
+main > section ul li:hover {
+    background-color: rgb(233, 233, 233);
+}
+main > section ul li button:focus {
+    background-color: rgb(233, 233, 233);
+}
+main > section ul li:active {
+    background-color: rgb(212, 212, 212);
+}
+
+main > section ul li button {
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+
+ main > section ul li button h2 {
+    background-color: transparent;
+    font-size: 1em;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+ main > section ul li button p {
+    margin: 0;
+    font-size: 14px;
+    color: grey;
+    line-height: 1.5em
+}
+
+main > section ul li button p a{ 
+    color: grey;
+}
+
+
+ main section iframe {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/****************//****************/
+        /* @Media Main */
+/****************//****************/
+
+@media (min-width:960px){
+ main section iframe {
+        display: block;
+        height: 500px;
+        width: 584px;
+    }
+
+ main > section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 900px;
+        margin-top: 4em;
+        align-content: center;
+    }
+
+ main section ul{
+        padding-right: 1em;
+        margin-top: 0;
+        height: 93%;
+        width: fit-content;
+        padding: 0;
+    }
+}
+
+@media (min-width:1264px){
+ main section iframe {
+        height: 500px;
+        width: 774px;
+    }
+
+ main > section {  
+        width: 1185px;
+        display: flex;
+    }
+
+ main section ul {
+        width: 31%;
+    }
+}

@@ -124,13 +124,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  <!-- - Bril met 2 blokjes: geen probleem.
-  - Bril met vlekken: De toets onder de menukaart button kan je bijna niet lezen. Voor de rest is het geen probleem.
-  - Bril met blur: niks te lezen.
-  - Bril met geel filter: Alles is prima te lezen.
-  - Bril met klein doorkijkpunt: links werden wazig waardoor ik bij de locatie pagina helemaal niks kan lezen. Bij de homepagina: kan headings lezen maar kleine tekst niet. Cadeaukaart en bieftsuk 0.0 kopjes is ook mielijk te zien. FAQ is ook moeilijk te lezen maar de kopjes kan ik wel lezen.
-  - Kleuren blind gaat gewoon goed.
-  - Er is geen darkmode. -->
+  
 
 - Er ontbreekt een darkmode, en de brillen met blur, vlekken of kleine doorkijk gaatjes is de kleine tekst niet of erg lastig te lezen. Zeker op de locatie pagina.
 
@@ -224,6 +218,10 @@ Antwoord: (HULP JOP) Zet de foto' als linkjes i.p.v buttons hierdoor wordt je ac
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik heb hele goede voortgang geboekt. De site ziet er al bijna af uit. Wel heb ik nog wat kleine detail dingetjes die ik zelf niet wist op te lossen want dan zie ik niet precies wat er gebeurt in de code. Verder heb ik een aantal vragen waar ik het antwoord al bijna op weet maar voor de zekerheid ga ik het toch even vragen want wie weet kan je hetzelfde resultaat krijgen op een andere manier. 
+  <img src="readme-images/" width="375px" alt="">
+  <img src="readme-images/" width="375px" alt="">
+  <img src="readme-images/" width="375px" alt="">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -289,29 +287,59 @@ Tijme wil dit bespreken:
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Wat er nog mis is en nog verbeterd kan worden:
+  
+  De test ging goed. Je kan al zien dat mijn site toegangkelijker is dan de echte site. Dat komt omdat op elk element waar je op kan en zou moeten kunnen hoveren alles states zitten. Ook zijn die states duidelijker dan op de echte site. 
+  De screennreader is duidelijk en staat op mijn site in de goede taal.
+  Alle alts en aria-labels staan goed dus de mensen die niet goed kunnen zien en een screenreader gebruiken kunnen zich wat voorstellen van mijn site en ze worden niet gek van alle nmmers en dingen die worden opgenoemd als ze op een afbeelding komen zoals op de echte loetje website.
+
+ Natuurlijk kunnen er altijd dingen beter en dat kwam ook uit de test. Die resultaten kan je hieronder zien.
+
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  - Bij de locatie pagina ziet de screenreader niet dat het een telefoonnummer is in de ul naast de map dus leest die dat als een groot getal op.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+
+  - Dit kan opgelost worden met aria-labels. 
+   <img src="readme-images/" width="375px" alt="">
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  - De tab functie bij het carousel doet het daar heel raar.
+  - Bij de pagina "locaties" zijn de locaties geen buttons.
+  - De linkjes op de foto's in de eerste sectie van de main hebben geen states.
+
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Ik heb een idee hoe ik dit kan oplossen maar daar heb ik wel javascript voor nodig. Dit is geen probleem maar ik heb nu al weer een stukje code maar dat doet het deels wel deels niet. Het doel van dat stukje code is dat het detecteerd wanneer een element in de lijst een focus heeft. En op deze actie komt er een class op de ul waardoor de 4 afbeeldingen worden verdeeld over de eerste sectie in de main waardoor ze allemaal tegelijkertijd te zien zijn. En dus geen rare dingen gebeuren waar content opeens verdwijnt.
+  <img src="readme-images/javascriptcode.png" width="375px" alt="Stukje code van javascript">
+  <img src="readme-images/contentweg.png" width="375px" alt="Content opeens weg als je door het carousel tabt">
 
+  - Ik heb buttons om content in de li gezet. 
+  - Ik heb er states voor geschreven.
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+
+  - Met parkinson swipe ik perongeluk naar de locatie's pagina (de vorige pagina eigenlijk).
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  -  Dit heb ik op gelost met overscroll-behavior-x: none; het werkt nu wel maar ik moet nog even navragen of dit wel de beste oplossing is en of het wel mag.
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  
+  - Het kleinste lettertype is nog te klein. ("loetje is 45 jaar").
+  - Er is nog geen darkmode.
 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  - Ik heb ik de @media op verschillende breakpoints het lettertype vergroot. 
+  en sowieso het kleinste lettertype 1em gegeven.
+  - De darkmode ga ik nog maken.
+
+
 
 </details>
 
@@ -327,15 +355,44 @@ Tijme wil dit bespreken:
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  De voortgang gaat prima, heb nog wat laatste dingetjes die ik nog moet oplossen.
+  heb niet super veel vooruitgang geboekt met de opmaak van de site maar heb vooral tijd besteedt aan het opruimen van de css.
+  <img src="readme-images/homeeerstestuk.png" width="375px" alt="homepagina eerste stuk">
+  <img src="readme-images/hometweedestuk.png" width="375px" alt="homepagina tweede stuk">
+  <img src="readme-images/locatiepaginaaf" width="375px" alt="Locaties pagina">
+
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Jop            | Nina               | tijme        | liam             |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+
+Vragen Jop:
+- Ik heb een idee hoe ik dat probleem bij de eerste sectie bij de main kan oplossen maar ik heb nu een stukje code in javascript daarvoor maar dat doet het deels wel deels niet. Het doel van dat stukje code is dat het ziet wanneer een element in de lijst een focus heeft. En op deze actie komt er een class op de ul waardoor de 4 afbeeldingen worden verdeeld over de eerste sectie in de main waardoor ze allemaal tegelijkertijd te zien zijn. En dus geen rare dingen gebeuren waar content opeens verdwijnt.
+ -  ik heb overscroll-behavior-x: none; gebruikt, het werkt nu wel maar is dit wel de beste oplossing en mag het wel.
+ - de main bugged bij mij.
+ <img src="readme-images/bugscreenshot.png" width="375px" alt="Bug na refresh">
+<img src="readme-images/bugscreenshottwee.png" width="375px" alt="Bug na refresh twee">
+
+- En ik heb een vraag over dat 1 van de titels aan de kant blijft plakken zoals dit:
+<img src="readme-images/htweeaandekantvast" width="375px" alt="h2 aan de kant">
+
+Vragen Nina:
+
+
+
+
+Vragen Tijme:
+
+
+
+Vragen Liam:
 
 
   ### Verslag van meeting
