@@ -376,7 +376,7 @@ Tijme wil dit bespreken:
 Vragen Jop:
 - Ik heb een idee hoe ik dat probleem bij de eerste sectie bij de main kan oplossen maar ik heb nu een stukje code in javascript daarvoor maar dat doet het deels wel deels niet. Het doel van dat stukje code is dat het ziet wanneer een element in de lijst een focus heeft. En op deze actie komt er een class op de ul waardoor de 4 afbeeldingen worden verdeeld over de eerste sectie in de main waardoor ze allemaal tegelijkertijd te zien zijn. En dus geen rare dingen gebeuren waar content opeens verdwijnt.
  -  ik heb overscroll-behavior-x: none; gebruikt, het werkt nu wel maar is dit wel de beste oplossing en mag het wel.
- <!-- knopje van maken -->
+
  - de main bugged bij mij.
  <img src="readme-images/bugscreenshot.png" width="375px" alt="Bug na refresh">
 <img src="readme-images/bugscreenshottwee.png" width="375px" alt="Bug na refresh twee">
@@ -401,9 +401,9 @@ Vragen Liam:
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - focus-within
+  - Knopje voor maken
+  - Nog wat h2 bij de sections gedaan voor de semantiek.
   - ...
 
 </details>
@@ -418,19 +418,36 @@ Vragen Liam:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/locatiespaginaeind.png" width="375px" alt="uitomst opdracht 1">
+   <img src="readme-images/footereind.png" width="375px" alt="uitomst opdracht 1">
+    <img src="readme-images/indexeind.png" width="375px" alt="uitomst opdracht 1">
+     <img src="readme-images/indexeerstemain.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Het coderen ging goed, ik moest even inkomen maar daarna ging hetr snel. Ik heb veel uitgeprobeerd maar niet alles is gelukt. Ik heb meer css geschreven dan vorige vakken dus dat zit nu beter in mijn hoofd en ik heb nieuwe css regels geleerd zoals het gebruik van roots, details en gradients.
+  Ook heb ik veel meer geleerd over hoe je nou een website toegankelijk maakt van iedereen en dat ga ik ook zeker gebruiken in de toekomst.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik heb het niet voor melkaar gekregen om nog een uitklap menu bovenin de header met toegankelijkheids knopjes zoals hoog contrast, lettertype vergroten en overscroll-behavior-x uit te zetten voor parkinson. Het menu'tje was er wel maar het deed heel raar met focussen en uitklappen. Ook was het contrast maken met hovers moeilijk in de hoge contrast modes. en de lettertypes vergroten kreeg ik niet voor melkaar. Ik heb een studente assistent gevraagt mij te helpen maar dat lukte haar ook niet. OOk was mijn tijd bijna voorbij dus heb ik alles maar verwijderd om het nog netjes te maken. Helaas realiseerde ik me dat ik hier geen screenshots van heb gemaakt. wel heb ik nog dit stukje code: (Dit stond in de header)
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+< section >
+			<h2 class="visually-hidden">Toegankelijkheid menu</h2>
+
+			<button aria-label="open toegankelijkheid menu" >
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+
+			<button>Hoog contrast</button>
+			<button>Overflow-x uit</button>
+		</section>
+
+
+Ook heb ik nog problemen met dat de linkjes eerst foccussen als je erop klikt waardoor je er niet op kan klikken. geen idee hoe dat komt.
 </details>
 
 
@@ -443,9 +460,13 @@ Vragen Liam:
   <summary>continu bijhouden terwijl je werkt</summary>
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  
+  1. carousel: https://css-tricks.com/css-only-carousel/
+  2. map: https://google-map-generator.com/
+  3. hover in nav: https://codepen.io/shooft/pen/qBogPoM?editors=1100
+  4. shadows: https://getcssscan.com/css-box-shadow-examples
+  5. hamburgermenu button: https://codepen.io/shooft/pen/dymRMBZ
+  6. list style: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+  7. hide h2 https://codepen.io/shooft/pen/rNvJyov
 
 </details>
