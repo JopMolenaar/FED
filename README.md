@@ -376,6 +376,7 @@ Tijme wil dit bespreken:
 Vragen Jop:
 - Ik heb een idee hoe ik dat probleem bij de eerste sectie bij de main kan oplossen maar ik heb nu een stukje code in javascript daarvoor maar dat doet het deels wel deels niet. Het doel van dat stukje code is dat het ziet wanneer een element in de lijst een focus heeft. En op deze actie komt er een class op de ul waardoor de 4 afbeeldingen worden verdeeld over de eerste sectie in de main waardoor ze allemaal tegelijkertijd te zien zijn. En dus geen rare dingen gebeuren waar content opeens verdwijnt.
  -  ik heb overscroll-behavior-x: none; gebruikt, het werkt nu wel maar is dit wel de beste oplossing en mag het wel.
+ <!-- knopje van maken -->
  - de main bugged bij mij.
  <img src="readme-images/bugscreenshot.png" width="375px" alt="Bug na refresh">
 <img src="readme-images/bugscreenshottwee.png" width="375px" alt="Bug na refresh twee">
@@ -384,13 +385,15 @@ Vragen Jop:
 <img src="readme-images/htweeaandekantvast" width="375px" alt="h2 aan de kant">
 
 Vragen Nina:
-
-
-
+- Background kleur bij mijn 2de pagina moet zwart, ik heb beide mijn body’s een class gegeven alleen het doet gek als ik verander, hoe los ik dit op?
+- Hulp bij dark/light mode bij me site, invert of filter voor mijn achtergrond?
+- Pijl als je op klikt dat het dan weer naar boven springt (2de pagina)
 
 Vragen Tijme:
 
-
+- Waarom luistert 1e <li> niet naar justify content en de andere wel?
+- Kan een border uitvagen op het einde?
+-  Hoe 2 texten in een container uit elkaar zetten? (Mag je 2 html elementen gebruiken?)
 
 Vragen Liam:
 

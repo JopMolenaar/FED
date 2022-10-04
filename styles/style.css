@@ -8,9 +8,7 @@
 button, summary {
 	cursor: pointer;
 }
-html, body {
-    overscroll-behavior-x: none;
-}
+
 
 
 /*********************/
@@ -20,37 +18,58 @@ html, body {
     --color-background:white;
 	--color-background-footer:rgb(243, 243, 243);
 
-    
+    --color-toegankelijkheid: rgb(197, 197, 197);
+    --color-hover-toegankelijkheidsbuttons: #F7F7F7;
 
-   
     --color-nav: white;
-    --color-cadeaukaart: #6D4221;
 
+
+    --color-select: white;
     --color-hover-select: #F7F7F7;
     
 
     --color-vragen: #F7F7F7;
+    --color-vragen-hover: rgb(221, 221, 221);
     
-
-    --color-text-white: white;
     --color-text: #6D4221;
+    --color-text-white-onwhitemode: white;
+    --color-text-black-onwhitemode: black;
+    --color-text-white: white;
+    --color-text-black: black;
     
+    --color-black-onwhitemode: black;
+    --color-white-onwhitemode: white;
+
+    --color-knop-aan: rgb(94, 138, 94);
+    --color-button-aan-hover:rgb(145, 182, 145);
+
+    --color-grijs: grey;
     --color-brown: #6D4221;
     --color-groen: #5c7a4f;
     
+    --color-lijstbottom: rgb(172, 172, 172);
+    --color-listlocaties: rgb(233, 233, 233);
     
     --color-hamburgerMenu: rgb(63, 63, 63);
     --color-hover-hamburgernav: rgb(100, 100, 100);
     
     --color-buttonhamb: black;
-    --color-buttonhamb-hover-active: rgb(211, 0, 0);    
+    --color-buttonhamb-active: rgb(20, 20, 20);
+    --color-buttonhamb-hover-active: rgb(211, 0, 0);   
+
     --color-hover-header-button: rgb(209, 209, 209);
     --color-hover-header-button-active: rgb(95, 95, 95);
-
-     --color-shadow: rgba(0, 0, 0, 0.40) 0px 3px 8px;
-
     
     --color-active: black;
+    --color-afocus: rgb(0, 0, 0);
+    
+    --color-shadow: rgba(0, 0, 0, 0.40) 0px 3px 8px;
+    --color-shadow-li:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --color-shadowbutton: 0 3px 1px -2px rgb(0 0 0 / 20%)
+                        , 0 2px 2px 0 rgb(0 0 0 / 14%)
+                        , 0 1px 5px 0 rgb(0 0 0 / 12%);
+   
 }
 
 
@@ -59,50 +78,127 @@ html, body {
 
 
 
-/* 
+
 @media (prefers-color-scheme:dark){
     :root{
-        --color-background:rgb(20, 20, 20);
+        --color-toegankelijkheid:black;
+        --color-background:rgb(35, 35, 35);
         --color-background-footer:rgb(43, 43, 43);
+        --color-nav: rgb(35, 35, 35);
 
-        
+        --color-select: rgb(35, 35, 35);
+        --color-hover-select: #414141;
 
-    
-        --color-nav: rgb(20, 20, 20);
-        --color-cadeaukaart: #6D4221;
+        --color-vragen: #353535;
+        --color-vragen-hover: #414141;
 
-        --color-hover-select: #F7F7F7;
-        
-
-        --color-vragen: #535353;
-        
+        --color-text-white-onwhitemode: black;
+        --color-text-black-onwhitemode: white;
+        --color-black-onwhitemode: white;
+        --color-white-onwhitemode: black;
 
         --color-text-white: white;
-        --color-text: #e7914f;
-        
-        --color-brown: #e7914f;
-        --color-groen: #7ea86d;
-        
-        
-        --color-hamburgerMenu: rgb(37, 37, 37);
+        --color-text-black: black;
+
+        --color-text: #d87e3a;
+        --color-brown: #d87e3a;
+        --color-groen: #70995f;
+
+        --color-grijs: rgb(200, 200, 200);
+        --color-listlocaties: #414141;
+
+        --color-hamburgerMenu: rgb(24, 24, 24);
         --color-hover-hamburgernav: rgb(68, 68, 68);
-        
         --color-buttonhamb: #F7F7F7;
+        --color-buttonhamb-active: #F7F7F7;
         --color-buttonhamb-hover-active: rgb(211, 0, 0);    
         --color-hover-header-button: rgb(58, 58, 58);
         --color-hover-header-button-active: rgb(95, 95, 95);
-
-        --color-shadow: rgba(0, 0, 0, 0.40) 0px 3px 8px;
-
         
+
         --color-active: black;
+        --color-afocus: rgb(145, 145, 145);
+        
+
+        --color-shadowbutton: 0 3px 1px -2px rgb(250, 250, 250 / 20%), 
+        0 2px 2px 0 rgb(250, 250, 250 / 14%), 
+        0 1px 5px 0 rgb(250, 250, 250 / 12%);
+        --color-shadow: rgba(0, 0, 0, 0.40) 0px 3px 8px;
+        --color-shadow-li:rgba(211, 211, 211, 0.25) 0px 2px 5px -1px, 
+        rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
+    }
+
+    img{
+        filter: brightness(.7);
+    }
+
+    footer img, header img {
+        filter: invert(50%);
+        filter: brightness(800%);
+    }
+
+    iframe{
+        filter: brightness(.7);
+    }
+
+}
+
+html.highcontrast {
+    --color-background:rgb(0, 0, 0);
+	--color-background-footer:rgb(255, 255, 255);
+
+    --color-toegankelijkheid: rgb(255, 255, 255);
+    --color-hover-toegankelijkheidsbuttons: rgb(255, 255, 0);
+
+    --color-nav: rgb(0, 0, 0);
 
 
-    } */
-
+    --color-select: rgb(255, 255, 255);
+    --color-hover-select: #F7F7F7;
     
 
+    --color-vragen: #ffffff;
+    --color-vragen-hover: rgb(255, 255, 0);
+    
+    --color-text: #ffffff;
+    --color-text-white-onwhitemode: white;
+    --color-text-black-onwhitemode: black;
+    --color-text-white: white;
+    --color-text-black: black;
+    
+    --color-black-onwhitemode: black;
+    --color-white-onwhitemode: white;
 
+    --color-knop-aan: rgb(0, 255, 0);
+    --color-button-aan-hover:rgb(0, 255, 200);
+
+    --color-grijs: rgb(255, 255, 255);
+    --color-brown: rgb(0, 255, 255);
+    --color-groen: rgb(0, 255, 0);
+    
+    --color-lijstbottom: rgb(172, 172, 172);
+    --color-listlocaties: rgb(233, 233, 233);
+    
+    --color-hamburgerMenu: rgb(0, 0, 0);
+    --color-hover-hamburgernav: rgb(255, 255, 0);
+    
+    --color-buttonhamb: black;
+    --color-buttonhamb-active: rgb(0, 0, 0);
+    --color-buttonhamb-hover-active: rgb(255, 0, 0);   
+
+    --color-hover-header-button: rgb(209, 209, 209);
+    --color-hover-header-button-active: rgb(95, 95, 95);
+    
+    --color-active: black;
+    --color-afocus: rgb(0, 0, 0);
+    
+    --color-shadow: rgba(0, 0, 0, 0.40) 0px 3px 8px;
+    --color-shadow-li:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --color-shadowbutton: 0 3px 1px -2px rgb(0 0 0 / 20%)
+                        , 0 2px 2px 0 rgb(0 0 0 / 14%)
+                        , 0 1px 5px 0 rgb(0 0 0 / 12%);
+  }
 
 /****************/
 /* JOUW STYLING */
@@ -117,7 +213,6 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden;
-
 }
 a {
     text-decoration: none;
@@ -127,7 +222,15 @@ ul {
     list-style: none;
 }
 
-
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 
 
 
@@ -139,12 +242,12 @@ ul {
 
 body header{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 
     margin: 0;
     padding: 0;
-    height: 7.5em;
+    height: 10.5em;
     width: 100vw;
 
     background-color:var(--color-nav);
@@ -155,6 +258,173 @@ body header{
     top: 0;
     padding-left: 1em;
     padding-right: 1em;
+    transform:translateY(-25%);
+    transition: 0.3s;
+}
+
+
+
+
+/* toegankelijkheid menu'tje */
+body header > section {
+    z-index: 2000;
+    width: 100vw;
+    height: 3em;
+    padding-left: 0em;
+    padding-right: 2em;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 73.25em;
+    background-color: var(--color-toegankelijkheid);
+    border-radius: 0 0 1.25em 1.25em;
+    transition: 0.3s;
+}
+body header section button, 
+body header section input, 
+body header section label{
+    margin-bottom: 1em;
+}
+body header section label {
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: .0892857143em;
+    text-transform: uppercase;
+}
+
+
+
+body header section button:first-of-type {
+    position: relative;
+    top: 3em;
+    left: 0.625em;
+
+    display:grid;
+    place-items:center;
+    border-radius: 0 0 0.9375em 0.9375em;
+    width:2.75em;
+    height:2.75em;
+    order: -1;
+    appearance: none;
+    border:none;
+    background: var(--color-toegankelijkheid);
+    transition: 0.3s;
+}
+body.openMenu header section button:first-of-type {
+    border-radius: 50%;
+}
+body header section button:first-of-type span {
+    transition-duration:.5s;
+}
+body header section button:first-of-type:hover  {
+    background-color: var(--color-hover-header-button);
+}
+body header section button:first-of-type span:nth-of-type(1) {
+    transform:translateY(-.4em);
+}  
+body header section button:first-of-type span:nth-of-type(3) {
+    transform:translateY(.4em);
+}
+body.openMenu header section button:first-of-type span:nth-of-type(1) {
+    transform:rotate(45deg) scalex(1.25);
+}
+body.openMenu header section button:first-of-type span:nth-of-type(2) {
+    opacity:0;
+}
+body.openMenu header section button:first-of-type span:nth-of-type(3) {
+    transform:rotate(-45deg) scalex(1.25);
+}
+/* https://codepen.io/shooft/pen/dymRMBZ */
+
+body.openMenu header section button:first-of-type span {
+    background-color:var(--color-buttonhamb-active);
+}
+body.openMenu header section button:first-of-type:hover span {
+    background-color:var(--color-buttonhamb-hover-active);
+}
+body.openMenu header section button:first-of-type:hover {
+    background-color: var(--color-hover-header-button);
+}
+
+
+
+
+
+
+
+/* als het menu open is */
+body.openMenu header {
+    transform:translateY(0);
+}
+header:focus-within {
+    transform:translateY(0);
+}
+body.openMenu main {
+    margin-top: 10.5em;
+}
+
+body.openMenu header > section{
+    width: 100vw;
+    height: 3em;
+    padding-left: 0em;
+    padding-right: 2em;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    max-width: 73.25em;
+    border-radius: 0px 0px 1.25em 1.25em;
+}
+body header section button:nth-child(3), 
+body header section button:nth-child(4),
+body header section input{
+    margin-top: 0.7em;
+    background-color: var(--color-text-white);
+    height: 2em;
+    min-width: 4em;
+    padding: 0 1em;
+    border: none;
+    color: var(--color-text-black);
+    border-radius: 1.75em;
+    font-size: .875rem;
+    font-weight: 700;
+    letter-spacing: .0892857143em;
+    text-transform: uppercase;
+}
+body header section button:nth-child(3):focus, 
+body header section button:nth-child(4):focus {
+    animation: bounceee;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+body header section button:nth-child(3):hover, 
+body header section button:nth-child(4):hover {
+    background-color: var(--color-hover-toegankelijkheidsbuttons);
+}
+body header section button.aan:hover {
+    background-color: var(--color-button-aan-hover);
+}
+body header section button:nth-child(3):active, 
+body header section button:nth-child(4):active {
+    transform: translateY(2px);
+}
+
+
+
+/* button functies */
+
+/* eerste knop */
+header section  button:nth-child(3).aan {
+    background-color: var(--color-knop-aan);
+    
+}
+
+
+/* 2de button */
+html.overScrollUit{
+    overscroll-behavior-x: none;
+}
+header section  button:nth-child(4).aan {
+    background-color: var(--color-knop-aan);
 }
 
 
@@ -165,10 +435,11 @@ body header div {
     align-items: center;
     width: 100vw;
     height: 7.5em;
+
+    margin-top: 0em;
+
 }
-
-
-
+/* */
 
 
 body header select {
@@ -180,6 +451,8 @@ body header select {
     font-size: 1em;
     margin-right: 1.25em;
     z-index: 999;
+    background-color: var(--color-select);
+    color: var(--color-text-black-onwhitemode);
 }
 body header select:hover{
     border-bottom: var(--color-text) solid 2px;
@@ -192,13 +465,12 @@ body header select:focus{
 }
 
 
-
 body header nav {
     height: 100vh;
     width: 15em;
     position: fixed;
     background-color:var(--color-hamburgerMenu);
-    z-index: 1000;
+    z-index: 4000;
     transition: 0.3s;
     left:0;
     right:0;
@@ -211,12 +483,14 @@ body header nav {
     grid-auto-flow: row dense;
 
 }
-
 /* class voor hamburger menu */
 body header.active nav {
     transform:translateX(0);
 }
-
+/* als er een link in de nav word getabt gaat nu de hamburger menu open :)*/
+body header nav:focus-within {
+    transform:translateX(0);
+}
 
 
 
@@ -231,19 +505,26 @@ body header nav ul li a{
     font-size: 1em;
     color: var(--color-text-white);
     font-weight:400; 
+    width: 100%;
+    height: 100%;
 }
 
-body header.active nav ul li:hover a{
+body header.active nav ul li a:hover{
     background-color: var(--color-hover-hamburgernav);
+}
+body header nav:focus-within ul li a:focus{
+    background-color: var(--color-hover-hamburgernav);
+}
+body header.active nav ul li a:active{
+    background-color: var(--color-active);
 }
 
 
 body header nav ul:nth-of-type(1) {
-    margin-top: 6em;
+    margin-top: 9em;
 }
-
 body header nav ul:nth-of-type(2) {
-    margin-top: 7em;
+    margin-top: 10em;
 }
 
 
@@ -252,7 +533,8 @@ body header nav ul:nth-of-type(2) {
 
 /* hamburgerbutton */
 body header div button {
-    z-index: 1888;
+    z-index: 5000;
+    margin-left: 1.25em;
     display:grid;
     place-items:center;
     border-radius:50%;
@@ -273,41 +555,40 @@ button span {
     transition-duration:.5s;
 }
 
-
 header button:hover  {
     background-color: var(--color-hover-header-button);
 }
 
-body header button span:nth-of-type(1) {
+body header div button span:nth-of-type(1) {
     transform:translateY(-.4em);
 }  
 
-body header button span:nth-of-type(3) {
+body header div button span:nth-of-type(3) {
     transform:translateY(.4em);
 }
   
-body header.active button span:nth-of-type(1) {
+body header.active div button span:nth-of-type(1) {
     transform:rotate(45deg) scalex(1.25);
 }
   
-body header.active button span:nth-of-type(2) {
+body header.active div button span:nth-of-type(2) {
     opacity:0;
 }
   
-body header.active button span:nth-of-type(3) {
+body header.active div button span:nth-of-type(3) {
     transform:rotate(-45deg) scalex(1.25);
 }
 /* https://codepen.io/shooft/pen/dymRMBZ */
 
   
-body header.active button span {
-    background-color:var(--color-background);
+body header.active div button span {
+    background-color:var(--color-buttonhamb-active);
 }
 
-body header.active button:hover span {
+body header.active div button:hover span {
     background-color:var(--color-buttonhamb-hover-active);
 }
-body header.active button:hover {
+body header.active div button:hover {
     background-color: var(--color-hover-header-button-active);
 }
 
@@ -323,7 +604,9 @@ body header.active button:hover {
         /* @Media header */
 /****************//****************/
 
-@media (min-width: 960px){
+@media (min-width: 60em){
+
+    
 
     body > header > div > nav {
         align-items: center;
@@ -369,19 +652,21 @@ body header.active button:hover {
     
     }
    
-    
+    body header nav:focus-within ul li a:focus{
+        background-color: transparent;
+    }
 
     body header select {
         position: absolute; 
-        top:1.4375em;
+        top:4.4375em;
         right: 1.875em;
-        margin-bottom: 5.625em;
         z-index: 1001;
     }
+   
+
 
     body header img {
-
-        padding-left: 12px;
+        padding-left: 0.75em;
     }
 
     body header div button {
@@ -407,25 +692,30 @@ body header.active button:hover {
         text-transform: uppercase;
 
         transition: 0.5s;
+
+        
     }
 
     body header div nav ul:nth-of-type(1) li:nth-of-type(1) a{
-        background-color: var(--color-cadeaukaart);
+        background-color: var(--color-text);
         margin-right: 1em;
         margin-left: 0.4em;
         height:fit-content;
-        color: var(--color-text-white);
+        
         padding:0.3125em;
+        width: fit-content;
+        color: var(--color-text-white-onwhitemode);
     }
 
     body header div nav ul:nth-of-type(1) li:nth-of-type(2) a{
         
         background-color: var(--color-groen);
-        color: var(--color-text-white);
+        
         padding:0.3125em;
-        margin-right: 1em;
-        margin-left: 0.4em;
         height:fit-content;
+        color: var(--color-text-white-onwhitemode);
+
+        
     }
 
     body header div nav ul:nth-of-type(1) li a:hover {
@@ -472,19 +762,20 @@ body header.active button:hover {
 
 
 /* max width, komt alleen nog ruimte naast */
-@media (min-width: 1172px) {
+@media (min-width: 73.25em) {
     body header {
-        display: flex;
+        /* display: flex; */
         justify-content: center;
     }
     
     body header div {
-        max-width: 1172px;
+        max-width: 73.25em;
         position: relative;
     }
 
     body header select {
-        right: 1em;
+        /* right: 1em; */
+        top:1.4375em;
     }
 }
 
@@ -501,10 +792,14 @@ body header.active button:hover {
                                 /* main */
 /****************//****************//****************//****************/
 
+
+
+
+
 main {
     position: relative;
     color: var(--color-text);
-    margin-top: 7.5em;
+    margin-top: 7.9em;
     background-color: var(--color-background); 
     display: grid;
     width: 100vw;
@@ -515,7 +810,7 @@ main {
 /* reserveren */
 main > button{
     background-color: var(--color-groen);
-    height: 1.25em;
+
     position: fixed;
     right: 0.875em;
     bottom: 0.875em;
@@ -523,11 +818,11 @@ main > button{
     min-width: 4em;
     padding: 0 1em;
     border: none;
-    color: var(--color-text-white);
+    color: var(--color-text-white-onwhitemode);
     border-radius: 1.75em;
-    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+    box-shadow: var(--color-shadowbutton);
     font-size: .875rem;
-    font-weight: 200;
+    font-weight: 700;
     letter-spacing: .0892857143em;
     text-transform: uppercase;
 }
@@ -539,7 +834,7 @@ main > button:focus {
 }
 
 main > button:hover {
-    background-color: var(--color-cadeaukaart);
+    background-color: var(--color-brown);
 }
 
 main > button:active {
@@ -570,11 +865,11 @@ main > ul:last-of-type li{
 }
 
 main > ul:last-of-type li:hover {
-    background-color: var(--color-cadeaukaart);
+    background-color: var(--color-brown);
 }
 
 main > ul:last-of-type li:active {
-    background-color: var(--color-cadeaukaart);
+    background-color: var(--color-brown);
    
     transform: translateY(2px);
     
@@ -588,7 +883,7 @@ main > ul:last-of-type li a {
 }
 
 main > ul:last-of-type li a svg {
-    fill: var(--color-nav);
+    fill: var(--color-white-onwhitemode);
 }
 
 @keyframes glow {
@@ -597,7 +892,7 @@ main > ul:last-of-type li a svg {
     }
 
     50% {
-        background-color: var(--color-cadeaukaart);
+        background-color: var(--color-brown);
         transform: translateY(-2px);
     }
 
@@ -627,7 +922,7 @@ footer {
 
     width: 100vw;
     padding-top:3.75em;
-    padding-bottom: 1.2em;
+    padding-bottom: 2em;
     background-color: var(--color-background-footer);
     display: grid;
     align-items: center;
@@ -637,7 +932,7 @@ footer {
 
 footer section:nth-of-type(1) {
     padding-top: 0;
-    max-width: 1172px;
+    max-width: 73.25em;
     align-self: left;
     width: fit-content;
     width: calc(100vw - 1.875em);
@@ -667,7 +962,7 @@ footer section ul {
 footer section ul li a{
     line-height: 1.5;
     text-decoration: underline;
-    color: var(--color-cadeaukaart);
+    color: var(--color-text);
     transition: 0.3s;
 }
 
@@ -675,10 +970,11 @@ footer section ul li a:hover {
     text-decoration: none;
 }
 footer section ul li a:active {
-    color: var(--color-hamburgerMenu);
+    color: var(--color-active);
 }
 footer section ul li a:focus {
-    background-color: rgb(233, 247, 152);
+    background-color: transparent;
+    font-weight: 700;
 }
 
 
@@ -699,19 +995,19 @@ footer section p {
     font-weight: 300;
     font-size: 1em;
 }
-footer section p a {
-    color: var(--color-cadeaukaart);
+footer a {
+    color: var(--color-text);
     text-decoration: underline;
-    transition: 0.3s;
+    transition: 0.2s;
 }
-footer section p a:hover {
+footer a:hover {
     text-decoration: none;
 }
-footer section p a:active {
-    color: var(--color-hamburgerMenu);
+footer a:active {
+    color: var(--color-active);
 }
-footer section p a:focus {
-    background-color: rgb(233, 247, 152);
+footer a:focus {
+    font-weight: 500;
 }
 
 
@@ -723,6 +1019,7 @@ footer section img {
     margin-left: auto;
     margin-right: auto;
     align-self: center;
+    
 
 }
 
@@ -730,7 +1027,7 @@ footer section img {
         /* @Media Footer */
 /****************//****************/
 
-@media (min-width: 960px) {
+@media (min-width: 60em) {
     footer section:nth-of-type(2){
         display: flex;
         align-items: center;
@@ -751,3 +1048,5 @@ footer section img {
 /* shadows: https://getcssscan.com/css-box-shadow-examples */
 /* hamburgermenu button: https://codepen.io/shooft/pen/dymRMBZ */
 /* list style: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
+/* hide h2 https://codepen.io/shooft/pen/rNvJyov */
+

@@ -1,5 +1,8 @@
 
 
+
+
+
 /* locaties logo */
 body header div a img {
     height: 5em;
@@ -8,8 +11,27 @@ body header div a img {
 body header div a img:hover {
     transform: translateY(-3px);
 }
- body header div a img:active {
+ body header div a:active img{
      transform: translateY(3px);
+}
+
+@keyframes bounceee {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+body header div > a:focus {
+    animation-name: bounceee; 
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -22,20 +44,24 @@ body header div a img:hover {
 main > h2 {
 
     text-align: center;
-    font-size: 32px;
-    padding-bottom: 36px;
+    font-size: 2em;
+    padding-bottom: 2.25em;
 }
 
  main select {
-    width: 280px;
-    height: 48px;
+    width: 17.5em;
+    height: 3em;
     align-self: center;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 6em;
-    padding: 10px 15px;
+    padding: 0.625em 0.9375em;
     font-size: 1em;
+    background-color: var(--color-background);
+    color: var(--color-text-black-onwhitemode);
 }
+
+
 
 main select:focus {
     animation-name: bounceee; 
@@ -57,7 +83,7 @@ main select:hover {
     width: 100%;
     margin-top: 4em;
     margin-bottom: 4em;
-    height: 535px;
+    height: 33.4375em;
 }
 
 main section ul{
@@ -72,18 +98,18 @@ main section ul{
 main > section ul li {
     width: 100%;
 
-    border-bottom: rgb(172, 172, 172) solid 0.5px;
+    border-bottom: var(--color-lijstbottom) solid 0.5px;
     color: black;
     transition: 0.2s;
 }
 main > section ul li:hover {
-    background-color: rgb(233, 233, 233);
+    background-color: var(--color-listlocaties);
 }
 main > section ul li button:focus {
-    background-color: rgb(233, 233, 233);
+    background-color: var(--color-listlocaties);
 }
 main > section ul li:active {
-    background-color: rgb(212, 212, 212);
+    background-color: var(--color-vragen);
 }
 
 main > section ul li button {
@@ -98,25 +124,25 @@ main > section ul li button {
 }
 
 
- main > section ul li button h2 {
+ main > section ul li button h3 {
     background-color: transparent;
     font-size: 1em;
     line-height: 1.2em;
     font-weight: 400;
     margin: 0;
     padding: 0;
-    color: black;
+    color: var(--color-black-onwhitemode);
 }
 
  main > section ul li button p {
     margin: 0;
-    font-size: 14px;
-    color: grey;
+    font-size: 0.875em;
+    color: var(--color-grijs);
     line-height: 1.5em
 }
 
 main > section ul li button p a{ 
-    color: grey;
+    color: var(--color-grijs);
 }
 
 
@@ -135,17 +161,17 @@ main > section ul li button p a{
         /* @Media Main */
 /****************//****************/
 
-@media (min-width:960px){
+@media (min-width:60em){
  main section iframe {
         display: block;
-        height: 500px;
-        width: 584px;
+        height: 31.25em;
+        width: 36.5em;
     }
 
  main > section {
         margin-left: auto;
         margin-right: auto;
-        width: 900px;
+        width: 56.25em;
         margin-top: 4em;
         align-content: center;
     }
@@ -159,14 +185,14 @@ main > section ul li button p a{
     }
 }
 
-@media (min-width:1264px){
+@media (min-width:79em){
  main section iframe {
-        height: 500px;
-        width: 774px;
+        height: 31.25em;
+        width: 48.375em;
     }
 
  main > section {  
-        width: 1185px;
+        width: 74.0625em;
         display: flex;
     }
 
