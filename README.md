@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Rood, maar blauw voor CSS
 
   #### Je focus:
-  surface plane maar ik wil responsive ook doen.
+  responsive maar ik ga ook surface plane doen
  
 </details>
 
@@ -418,20 +418,19 @@ Vragen Liam:
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/locatiespaginaeind.png" width="375px" alt="uitomst opdracht 1">
-   <img src="readme-images/footereind.png" width="375px" alt="uitomst opdracht 1">
-    <img src="readme-images/indexeind.png" width="375px" alt="uitomst opdracht 1">
-     <img src="readme-images/indexeerstemain.png" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/locatiespaginaeind.png" width="375px" alt="locatiespagina af">
+  <img src="readme-images/indexeerstemain.png" width="375px" alt="index">
+    <img src="readme-images/indexeind.png" width="375px" alt="index">
+   <img src="readme-images/footereind.png" width="375px" alt="footer">
 
   ### Dit ging goed/Heb ik geleerd: 
   Het coderen ging goed, ik moest even inkomen maar daarna ging hetr snel. Ik heb veel uitgeprobeerd maar niet alles is gelukt. Ik heb meer css geschreven dan vorige vakken dus dat zit nu beter in mijn hoofd en ik heb nieuwe css regels geleerd zoals het gebruik van roots, details en gradients.
   Ook heb ik veel meer geleerd over hoe je nou een website toegankelijk maakt van iedereen en dat ga ik ook zeker gebruiken in de toekomst.
-
+<img src="readme-images/responisivegingergmakkelijk.png" width="375px" alt="responsive foto">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Ik heb het niet voor melkaar gekregen om nog een uitklap menu bovenin de header met toegankelijkheids knopjes zoals hoog contrast, lettertype vergroten en overscroll-behavior-x uit te zetten voor parkinson. Het menu'tje was er wel maar het deed heel raar met focussen en uitklappen. Ook was het contrast maken met hovers moeilijk in de hoge contrast modes. en de lettertypes vergroten kreeg ik niet voor melkaar. Ik heb een studente assistent gevraagt mij te helpen maar dat lukte haar ook niet. OOk was mijn tijd bijna voorbij dus heb ik alles maar verwijderd om het nog netjes te maken. Helaas realiseerde ik me dat ik hier geen screenshots van heb gemaakt. wel heb ik nog dit stukje code: (Dit stond in de header)
+  Ik heb het niet voor melkaar gekregen om nog een uitklap menu bovenin de header met toegankelijkheids knopjes zoals hoog contrast, lettertype vergroten en overscroll-behavior-x uit te zetten voor parkinson. Het menu'tje was er wel maar het deed heel raar met focussen en uitklappen. Ook was het contrast maken met hovers moeilijk in de hoge contrast modes. en de lettertypes vergroten kreeg ik niet voor melkaar. Ik heb een studente assistent gevraagt mij te helpen maar dat lukte haar ook niet. O0k was mijn tijd bijna voorbij dus heb ik alles maar verwijderd om het nog netjes te maken. Dit stond in de header en ik heb wat foto's hoe het eruit zag:
 
 < section >
 			<h2 class="visually-hidden">Toegankelijkheid menu</h2>
@@ -444,10 +443,15 @@ Vragen Liam:
 
 			<button>Hoog contrast</button>
 			<button>Overflow-x uit</button>
-		</section>
+		< / section >
+
+ <img src="readme-images/toegankelijkheidmenu.png" width="375px" alt="toegankelijkheids menu">
+ <img src="readme-images/toegankelijkheidmenuopen.png" width="375px" alt="toegankelijkheids menu open">
+ <img src="readme-images/hoogcontrastmoeilijk.png" width="375px" alt="hoog contrast foto">       
 
 
 Ook heb ik nog problemen met dat de linkjes eerst foccussen als je erop klikt waardoor je er niet op kan klikken. geen idee hoe dat komt.
+  <img src="readme-images/focusstatelijftaan.png" width="375px" alt="focus state staat nog aan.">
 </details>
 
 
