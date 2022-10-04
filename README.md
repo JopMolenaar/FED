@@ -382,7 +382,7 @@ Vragen Jop:
 <img src="readme-images/bugscreenshottwee.png" width="375px" alt="Bug na refresh twee">
 
 - En ik heb een vraag over dat 1 van de titels aan de kant blijft plakken zoals dit:
-<img src="readme-images/htweeaandekantvast" width="375px" alt="h2 aan de kant">
+<img src="readme-images/htweeaandekantvast.png" width="375px" alt="h2 aan de kant">
 
 Vragen Nina:
 - Background kleur bij mijn 2de pagina moet zwart, ik heb beide mijn body’s een class gegeven alleen het doet gek als ik verander, hoe los ik dit op?
