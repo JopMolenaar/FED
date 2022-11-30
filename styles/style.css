@@ -128,7 +128,7 @@ button, summary {
         rgba(255, 255, 255, 0.3) 0px 1px 3px -1px;
     }
 
-    img{
+    img, iframe{
         filter: brightness(.7);
     }
 
@@ -137,68 +137,9 @@ button, summary {
         filter: brightness(800%);
     }
 
-    iframe{
-        filter: brightness(.7);
-    }
-
 }
 
-html.highcontrast {
-    --color-background:rgb(0, 0, 0);
-	--color-background-footer:rgb(255, 255, 255);
 
-    --color-toegankelijkheid: rgb(255, 255, 255);
-    --color-hover-toegankelijkheidsbuttons: rgb(255, 255, 0);
-
-    --color-nav: rgb(0, 0, 0);
-
-
-    --color-select: rgb(255, 255, 255);
-    --color-hover-select: #F7F7F7;
-    
-
-    --color-vragen: #ffffff;
-    --color-vragen-hover: rgb(255, 255, 0);
-    
-    --color-text: #ffffff;
-    --color-text-white-onwhitemode: white;
-    --color-text-black-onwhitemode: black;
-    --color-text-white: white;
-    --color-text-black: black;
-    
-    --color-black-onwhitemode: black;
-    --color-white-onwhitemode: white;
-
-    --color-knop-aan: rgb(0, 255, 0);
-    --color-button-aan-hover:rgb(0, 255, 200);
-
-    --color-grijs: rgb(255, 255, 255);
-    --color-brown: rgb(0, 255, 255);
-    --color-groen: rgb(0, 255, 0);
-    
-    --color-lijstbottom: rgb(172, 172, 172);
-    --color-listlocaties: rgb(233, 233, 233);
-    
-    --color-hamburgerMenu: rgb(0, 0, 0);
-    --color-hover-hamburgernav: rgb(255, 255, 0);
-    
-    --color-buttonhamb: black;
-    --color-buttonhamb-active: rgb(0, 0, 0);
-    --color-buttonhamb-hover-active: rgb(255, 0, 0);   
-
-    --color-hover-header-button: rgb(209, 209, 209);
-    --color-hover-header-button-active: rgb(95, 95, 95);
-    
-    --color-active: black;
-    --color-afocus: rgb(0, 0, 0);
-    
-    --color-shadow: rgba(0, 0, 0, 0.40) 0px 3px 8px;
-    --color-shadow-li:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
-        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    --color-shadowbutton: 0 3px 1px -2px rgb(0 0 0 / 20%)
-                        , 0 2px 2px 0 rgb(0 0 0 / 14%)
-                        , 0 1px 5px 0 rgb(0 0 0 / 12%);
-  }
 
 /****************/
 /* JOUW STYLING */
@@ -208,7 +149,7 @@ html.highcontrast {
 /****************/
 
 body {
-  color:var(--color-text);
+
   background-color:var(--color-background);
   margin: 0;
   position: relative;
@@ -247,7 +188,7 @@ body header{
 
     margin: 0;
     padding: 0;
-    height: 10.5em;
+    height: 7.5em;
     width: 100vw;
 
     background-color:var(--color-nav);
@@ -258,174 +199,12 @@ body header{
     top: 0;
     padding-left: 1em;
     padding-right: 1em;
-    transform:translateY(-25%);
-    transition: 0.3s;
+
+
 }
 
 
 
-
-/* toegankelijkheid menu'tje */
-body header > section {
-    z-index: 2000;
-    width: 100vw;
-    height: 3em;
-    padding-left: 0em;
-    padding-right: 2em;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    max-width: 73.25em;
-    background-color: var(--color-toegankelijkheid);
-    border-radius: 0 0 1.25em 1.25em;
-    transition: 0.3s;
-}
-body header section button, 
-body header section input, 
-body header section label{
-    margin-bottom: 1em;
-}
-body header section label {
-    font-size: .875rem;
-    font-weight: 700;
-    letter-spacing: .0892857143em;
-    text-transform: uppercase;
-}
-
-
-
-body header section button:first-of-type {
-    position: relative;
-    top: 3em;
-    left: 0.625em;
-
-    display:grid;
-    place-items:center;
-    border-radius: 0 0 0.9375em 0.9375em;
-    width:2.75em;
-    height:2.75em;
-    order: -1;
-    appearance: none;
-    border:none;
-    background: var(--color-toegankelijkheid);
-    transition: 0.3s;
-}
-body.openMenu header section button:first-of-type {
-    border-radius: 50%;
-}
-body header section button:first-of-type span {
-    transition-duration:.5s;
-}
-body header section button:first-of-type:hover  {
-    background-color: var(--color-hover-header-button);
-}
-body header section button:first-of-type span:nth-of-type(1) {
-    transform:translateY(-.4em);
-}  
-body header section button:first-of-type span:nth-of-type(3) {
-    transform:translateY(.4em);
-}
-body.openMenu header section button:first-of-type span:nth-of-type(1) {
-    transform:rotate(45deg) scalex(1.25);
-}
-body.openMenu header section button:first-of-type span:nth-of-type(2) {
-    opacity:0;
-}
-body.openMenu header section button:first-of-type span:nth-of-type(3) {
-    transform:rotate(-45deg) scalex(1.25);
-}
-/* https://codepen.io/shooft/pen/dymRMBZ */
-
-body.openMenu header section button:first-of-type span {
-    background-color:var(--color-buttonhamb-active);
-}
-body.openMenu header section button:first-of-type:hover span {
-    background-color:var(--color-buttonhamb-hover-active);
-}
-body.openMenu header section button:first-of-type:hover {
-    background-color: var(--color-hover-header-button);
-}
-
-
-
-
-
-
-
-/* als het menu open is */
-body.openMenu header {
-    transform:translateY(0);
-}
-header:focus-within {
-    transform:translateY(0);
-}
-body.openMenu main {
-    margin-top: 10.5em;
-}
-
-body.openMenu header > section{
-    width: 100vw;
-    height: 3em;
-    padding-left: 0em;
-    padding-right: 2em;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    max-width: 73.25em;
-    border-radius: 0px 0px 1.25em 1.25em;
-}
-body header section button:nth-child(3), 
-body header section button:nth-child(4),
-body header section input{
-    margin-top: 0.7em;
-    background-color: var(--color-text-white);
-    height: 2em;
-    min-width: 4em;
-    padding: 0 1em;
-    border: none;
-    color: var(--color-text-black);
-    border-radius: 1.75em;
-    font-size: .875rem;
-    font-weight: 700;
-    letter-spacing: .0892857143em;
-    text-transform: uppercase;
-}
-body header section button:nth-child(3):focus, 
-body header section button:nth-child(4):focus {
-    animation: bounceee;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-}
-body header section button:nth-child(3):hover, 
-body header section button:nth-child(4):hover {
-    background-color: var(--color-hover-toegankelijkheidsbuttons);
-}
-body header section button.aan:hover {
-    background-color: var(--color-button-aan-hover);
-}
-body header section button:nth-child(3):active, 
-body header section button:nth-child(4):active {
-    transform: translateY(2px);
-}
-
-
-
-/* button functies */
-
-/* eerste knop */
-header section  button:nth-child(3).aan {
-    background-color: var(--color-knop-aan);
-    
-}
-
-
-/* 2de button */
-html.overScrollUit{
-    overscroll-behavior-x: none;
-}
-header section  button:nth-child(4).aan {
-    background-color: var(--color-knop-aan);
-}
 
 
 /* center div */
@@ -521,10 +300,10 @@ body header.active nav ul li a:active{
 
 
 body header nav ul:nth-of-type(1) {
-    margin-top: 9em;
+    margin-top: 7em;
 }
 body header nav ul:nth-of-type(2) {
-    margin-top: 10em;
+    margin-top: 8em;
 }
 
 
@@ -658,9 +437,9 @@ body header.active div button:hover {
 
     body header select {
         position: absolute; 
-        top:4.4375em;
+        top:1.4375em;
         right: 1.875em;
-        z-index: 1001;
+        z-index: 7000;
     }
    
 
@@ -764,7 +543,7 @@ body header.active div button:hover {
 /* max width, komt alleen nog ruimte naast */
 @media (min-width: 73.25em) {
     body header {
-        /* display: flex; */
+
         justify-content: center;
     }
     
@@ -774,8 +553,8 @@ body header.active div button:hover {
     }
 
     body header select {
-        /* right: 1em; */
-        top:1.4375em;
+        right: 1em;
+
     }
 }
 
@@ -799,7 +578,7 @@ body header.active div button:hover {
 main {
     position: relative;
     color: var(--color-text);
-    margin-top: 7.9em;
+    margin-top: 7.5em;
     background-color: var(--color-background); 
     display: grid;
     width: 100vw;
@@ -987,6 +766,9 @@ footer section:nth-of-type(2) {
     width: fit-content;   
 }
 
+footer section h2 {
+    color: var(--color-text);
+}
 
 footer section p {
     order: 1;
@@ -1039,14 +821,14 @@ footer section img {
 
 
 
+/* 
+Bronnenlijst
 
-/* Bronnenlijst */
-
-/* carousel: https://css-tricks.com/css-only-carousel/ */
-/* map: https://google-map-generator.com/ */
-/* hover in nav: https://codepen.io/shooft/pen/qBogPoM?editors=1100 */
-/* shadows: https://getcssscan.com/css-box-shadow-examples */
-/* hamburgermenu button: https://codepen.io/shooft/pen/dymRMBZ */
-/* list style: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
-/* hide h2 https://codepen.io/shooft/pen/rNvJyov */
+carousel: https://css-tricks.com/css-only-carousel/
+map: https://google-map-generator.com/
+hover in nav: https://codepen.io/shooft/pen/qBogPoM?editors=1100
+shadows: https://getcssscan.com/css-box-shadow-examples
+hamburgermenu button: https://codepen.io/shooft/pen/dymRMBZ
+list style: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type
+hide h2 https://codepen.io/shooft/pen/rNvJyov */
 

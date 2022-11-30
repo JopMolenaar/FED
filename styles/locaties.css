@@ -7,6 +7,7 @@
 body header div a img {
     height: 5em;
     transition: 0.3s;
+
 }
 body header div a img:hover {
     transform: translateY(-3px);
@@ -183,7 +184,12 @@ main > section ul li button p a{
         width: fit-content;
         padding: 0;
     }
+
+    body header img {
+        padding-left: 1.5em;
+    }
 }
+
 
 @media (min-width:79em){
  main section iframe {
