@@ -776,6 +776,7 @@ footer section p {
     margin-bottom: 1em;
     font-weight: 300;
     font-size: 1em;
+    color: var(--color-text-black-onwhitemode);
 }
 footer a {
     color: var(--color-text);
